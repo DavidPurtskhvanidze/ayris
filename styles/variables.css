@@ -1,0 +1,13 @@
+:root {
+    --color-accent: #3F8C65;
+    --color-main-bg: #F9F4EC;
+    --color-text-dark-1: #000000;
+    --color-text-dark-2: #32312F;
+    --color-text-dark-3: #4B4947;
+    --color-text-light-1: #F9F4EC;
+    --color-menu-bg: var(--color-main-bg);
+
+    --font-family-base: 'Literaturnaya W08 Regular', sans-serif;
+    --transition-duration: 0.2s;
+
+}

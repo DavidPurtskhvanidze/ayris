@@ -1,0 +1,39 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto  1fr;
+    align-items: center;
+    height: 100px;
+    padding: 0 60px;
+    column-gap: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color .2s ease;
+    color: var(--color-text-light-1);
+    border-bottom: 1px solid transparent;
+}
+.header_color-active {
+    background-color: var(--color-menu-bg);
+    color: var(--color-text-dark-2);
+    border-bottom-color: var(--color-text-dark-3);
+}
+.header:hover {
+    background-color: var(--color-menu-bg);
+    color: var(--color-text-dark-2);
+    border-bottom-color: var(--color-text-dark-3);
+}
+.header__menu-list {
+    display: flex;
+    justify-content: flex-start;
+}
+.header__menu-list_end {
+    text-align: end;
+}
+.header__menu-item {
+    flex: 1;
+}
+.header__menu-link {
+    font-size: 19px;
+}
