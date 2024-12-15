@@ -1,0 +1,11 @@
+.section {
+
+}
+.section-title {
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-dark-3);
+    padding: 46px 0;
+}
