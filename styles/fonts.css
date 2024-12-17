@@ -1,8 +1,16 @@
 @font-face {
-    font-family: 'Literaturnaya W08 Regular';
+    font-family: 'Literaturnaya W08';
     src: url('../fonts/LiteraturnayaW08-Regular.woff2')format('woff2'),
     url('../fonts/LiteraturnayaW08-Regular.woff')format('woff');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Literaturnaya W08';
+    src: url('../fonts/LiteraturnayaW08-Italic.woff2')format('woff2'),
+    url('../fonts/LiteraturnayaW08-Italic.woff')format('woff');
+    font-weight: 400;
+    font-style: italic;
     font-display: swap;
 }

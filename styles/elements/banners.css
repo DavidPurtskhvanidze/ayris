@@ -1,0 +1,184 @@
+/*Banner common*/
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 899px;
+    width: 100%;
+}
+.banner-bg-picture {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.banner-bg-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-bg-picture-img-center {
+    object-position: center;
+}
+.banner-bg-picture-img-top {
+    object-position: top;
+}
+.banner-bg-picture-img-right {
+    object-position: right;
+}
+.banner-bg-picture-img-bottom {
+    object-position: bottom;
+}
+.banner-bg-picture-img-left {
+    object-position: left;
+}
+.banner-descriptor {
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: var(--color-text-light-1);
+    position: absolute;
+    top: var(--page-banner-padding);
+    left: var(--page-banner-padding);
+}
+.banner-title {
+    line-height: 1.1;
+    font-size: 75px;
+    letter-spacing: -0.05em;
+    color: var(--color-text-light-1);
+    padding-right: 0.6em;
+    position: absolute;
+    right: var(--page-banner-padding);
+    left: var(--page-banner-padding);
+    bottom: calc(var(--page-banner-padding) - 12px);
+}
+.banner-title:after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='36' viewBox='0 0 21 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.4402 16.7489C20.6159 16.9004 20.7568 17.0883 20.8535 17.2996C20.9501 17.511 21.0002 17.7407 21.0002 17.9732C21.0002 18.2058 20.9501 18.4355 20.8535 18.6469C20.7568 18.8582 20.6159 19.046 20.4402 19.1976L0.813487 35.893C0.813487 35.9643 0.74238 36 0.595713 36C0.505089 35.9926 0.417512 35.9636 0.340234 35.9156C0.262956 35.8675 0.198192 35.8016 0.151269 35.7235C0.0823757 35.6628 0.0338625 35.5822 0.0123799 35.4928C-0.00910266 35.4033 -0.00251244 35.3094 0.0312601 35.2239L13.5602 18.087L0.0357089 0.722595C-0.0354022 0.575401 0.0357111 0.388064 0.315711 0.169503C0.595711 -0.0490569 0.760153 -0.0535173 0.813487 0.169503L20.4402 16.7489Z' fill='%23F9F4EC'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0.2em;
+    right: 0;
+    width: 0.6em;
+    height: 0.6em;
+}
+.banner-title_vertical-center {
+    bottom: auto;
+    text-align: center;
+}
+.banners-wrapper-col-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.banners-wrapper-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.banners-wrapper-col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.banners-wrapper-col-3 .banner-title {
+    font-size: 48px;
+    letter-spacing: -0.05em;
+}
+div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
+    margin-top: 5px;
+}
+/*Banner common*/
+
+
+/*Banner main*/
+.main-page-top-banner {
+    height: 100vh;
+}
+.main-page-top-banner-text-wrapper {
+    position: absolute;
+    bottom: 14%;
+    text-align: center;
+}
+.main-page-top-banner-title {
+    color: var(--color-text-light-1);
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.main-page-top-banner-descriptor {
+    color: var(--color-text-light-1);
+    font-size: 20px;
+    align-items: center;
+}
+/*Banner main*/
+
+/*Banner with links*/
+.banner-with-links {
+    height: 599px;
+}
+.banner-with-links:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.9) 100%);
+}
+.banner-with-links picture {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.banner-with-links picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-with-links-title {
+    font-size: 48px;
+    letter-spacing: -0.01em;
+    color: var(--color-text-light-1);
+    position: absolute;
+    top: var(--page-banner-padding);
+    left: var(--page-banner-padding);
+    z-index: 1;
+}
+.banner-links-list {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: var(--page-banner-padding);
+    bottom: 0;
+    left: var(--page-banner-padding);
+    z-index: 1;
+    padding: 30px 0 40px;
+    border-top: 1.3px solid var(--color-text-light-1);
+}
+.banner-links-list-item {
+    flex: 1;
+}
+.banner-links-list-link {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--color-text-light-1);
+}
+.banner-links-list-link:hover {
+    color: var(--color-text-light-1);
+}
+/*Banner with links*/
+
