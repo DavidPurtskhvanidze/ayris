@@ -4,8 +4,15 @@
 @import url('utils.css');
 @import url('globals.css');
 
+@import url('elements/buttons.css');
+@import url('elements/grid.css');
 @import url('elements/header.css');
+@import url('elements/footer.css');
+@import url('elements/card.css');
+@import url('elements/inspired-by.css');
 @import url('elements/menu-drop.css');
 @import url('elements/section.css');
+@import url('elements/text-section.css');
 @import url('elements/banners.css');
-@import url('elements/footer.css');
+
+
