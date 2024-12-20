@@ -1,10 +1,25 @@
 .menu-drop {
-    display: none;
     position: absolute;
-    top: calc(100% + 1px);
+    overflow: auto;
     width: 100%;
     background-color: var(--color-menu-bg);
-    /*min-height: 630px;*/
+    color: var(--color-text-dark-2);
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    height: auto;
+    max-height: calc(100vh - var(--header-height));
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .3s cubic-bezier(.16, .68, .43, .99);
+    /*transform: translateY(-10px);*/
+}
+.header__menu-item-wrapper:hover .menu-drop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    /*transform: translateY(0);*/
 }
 .menu-drop-lists-picture {
     display: flex;
@@ -37,6 +52,7 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
+    padding-right: 16px;
 }
 .menu-drop__link {
     font-size: 20px;

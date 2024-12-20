@@ -6,13 +6,6 @@ body {
     color: var(--color-text-dark-2);
     background-color: var(--color-main-bg);
 }
-a,
-button,
-input,
-textarea,
-svg * {
-    transition-duration: var(--transition-duration);
-}
 a {
     text-decoration: none;
     color: inherit;

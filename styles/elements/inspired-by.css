@@ -2,7 +2,7 @@
     padding: 100px 0;
 }
 .inspired-by-wrapper {
-    max-width: 925px;
+    max-width: 1322px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -11,9 +11,12 @@
 .inspired-by-banner {
     aspect-ratio: 1 / 1.4;
     border: 1px solid #000;
-    border-radius: 260px;
+    border-radius: 600px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .inspired-by-banner__picture {
     position: absolute;
@@ -26,6 +29,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.inspired-by-banner__info {
+    position: absolute;
+    bottom: 124px;
+}
+.inspired-by-banner__info-descriptor {
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-text-light-1);
+}
+.inspired-by-banner__info-title {
+    font-size: 89px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: var(--color-text-light-1);
 }
 
 .inspired-by-info {
