@@ -1,11 +1,27 @@
 :root {
-    --color-accent: #3F8C65;
-    --color-main-bg: #F9F4EC;
+    /*The Ayris Brandbook & Guidelines Colors*/
+    /*Main colours*/
+    --color-emerald-green: #3F8C65;
+    --color-black: #000000;
+    --color-royal-paper: #F9F4EC;
+
+    /*Additional colours*/
+    --color-pale-gold: #806E4D;
+    --color-marie-antoinette: #DDA499;
+    --color-star-sapphire: #1D739F;
+    --color-air-blue: #ACCAE1;
+    --colol-iris-stem: #C5C177;
+    --color-canary-yellow: #EFE58F;
+    /*The Ayris Brandbook & Guidelines Colors*/
+
+
+    --color-accent: var(--color-emerald-green);
+    --color-main-bg: var(--color-royal-paper);
     --color-text-dark-1: #000000;
     --color-text-dark-2: #32312F;
     --color-text-dark-3: #4B4947;
     --color-text-gray-1: #95928E;
-    --color-text-light-1: #F9F4EC;
+    --color-text-light-1: var(--color-royal-paper);
     --color-menu-bg: var(--color-main-bg);
 
     --font-family-base: 'LiteraturnayaWebBook', serif;
@@ -14,4 +30,7 @@
     --header-height: 100px;
     --page-banner-padding: 60px;
 
+    --swiper-theme-color: var(--color-accent);
+    --swiper-navigation-color: var(--color-text-gray-1);
+    --swiper-navigation-sides-offset: 60px;
 }

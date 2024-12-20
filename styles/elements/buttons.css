@@ -1,7 +1,7 @@
 .button {
     border: 1px solid var(--color-text-dark-3);
     background-color: transparent;
-    height: 52px;
+    height: 58px;
     width: 100%;
     cursor: pointer;
 }
@@ -13,4 +13,13 @@
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+}
+
+.button_gray {
+    border: 1px solid var(--color-text-dark-3);
+    background-color: var(--color-text-dark-3);
+    color: var(--color-text-light-1);
+}
+.button_gray:hover {
+    background-color: var(--color-text-gray-1);
 }

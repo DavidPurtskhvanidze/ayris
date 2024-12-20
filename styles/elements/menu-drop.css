@@ -15,6 +15,17 @@
     transition: all .3s cubic-bezier(.16, .68, .43, .99);
     /*transform: translateY(-10px);*/
 }
+.menu-drop:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text-dark-2);
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+}
 .header__menu-item-wrapper:hover .menu-drop {
     opacity: 1;
     visibility: visible;

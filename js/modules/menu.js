@@ -8,4 +8,5 @@ function headerBgColorSwitcher() {
     }
 }
 
+window.addEventListener('DOMContentLoaded', headerBgColorSwitcher);
 window.addEventListener('scroll', headerBgColorSwitcher);

@@ -81,9 +81,11 @@
     position: absolute;
     top: 22px;
     right: 22px;
+    direction: rtl;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+    padding: 0;
 }
 .card-colors_item {
     width: 8px;
