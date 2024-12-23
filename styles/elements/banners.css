@@ -189,6 +189,7 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
 .banner-links-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: absolute;
     right: var(--page-banner-padding);
     bottom: 0;

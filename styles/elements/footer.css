@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    padding: 60px 60px 38px;
+    padding: var(--footer-padding) var(--footer-padding) 38px;
     background-color: var(--color-menu-bg);
 }
 .footer-main {

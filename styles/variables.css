@@ -28,6 +28,15 @@
     --transition-duration: 0.2s;
 
     --header-height: 100px;
+    --header-paddin-inline: 60px;
+    --header-logo-width: 312px;
+    --header-column-gap: 60px;
+    --header-border-width: 1px;
+
+    --footer-padding: 60px;
+
+    --menu-drop-lists-padding: 60px;
+
     --page-banner-padding: 60px;
 
     --swiper-theme-color: var(--color-accent);
