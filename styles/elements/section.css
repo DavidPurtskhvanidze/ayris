@@ -4,10 +4,10 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-text-dark-3);
-    padding: 46px 0;
+    padding: 45px 0;
 }
 .section-button-wrapper {
-    padding: 46px 0;
+    padding: 45px 0;
     text-align: center;
 }
 .section-button-wrapper .button {

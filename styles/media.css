@@ -3,20 +3,31 @@
     /*:root {*/
     /*    --header-height: 50px;*/
     /*}*/
+
+    /*Banners*/
+    .banner-title {
+        font-size: clamp(48px, 5vw, 65px);
+    }
+    .banners-wrapper-col-3 .banner-title {
+        font-size: clamp(29px, 3.5vw, 48px);
+    }
+    /*Banners*/
 }
 
 /*Tablet*/
 @media (max-width: 1023px) {
     :root {
         --header-height: 50px;
-        --header-logo-width: 212px;
-        --header-column-gap: 30px;
         --header-paddin-inline: 20px;
 
         --menu-drop-lists-padding: 0;
 
         --footer-padding: 10px;
+
+        --page-banner-padding-block: 50px;
+        --page-banner-padding-inline: 50px;
     }
+
     /*Header*/
     .header-burger-button {
         display: flex;
@@ -69,6 +80,7 @@
     }
 
 
+    /*menu-drop*/
     .menu-drop__section {
         width: 100%;
     }
@@ -85,8 +97,6 @@
     .menu-drop__list-link {
         font-size: 14px;
     }
-
-
     .menu-drop {
         position: static;
         opacity: 1;
@@ -112,23 +122,18 @@
         height: auto;
         opacity: 1;
     }
+    /*menu-drop*/
     /*Header*/
 
 
     /*Banners*/
-    .banners-wrapper-col-2 {
-        gap: 2px;
+    .banners-wrapper-col-3 .banner-title {
+        --page-banner-padding-block: 40px;
+        --page-banner-padding-inline: 40px;
     }
-    .banners-wrapper-col-3 {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2px;
-    }
-    .banner {
-        min-height: calc(50vh - var(--header-height));
-    }
-    .inspired-by-wrapper {
-        max-width: 90%;
-        grid-template-columns: repeat(1, 1fr);
+    .banners-wrapper-col-3 .banner-descriptor {
+        --page-banner-padding-block: 40px;
+        --page-banner-padding-inline: 40px;
     }
     /*Banners*/
 
@@ -145,10 +150,53 @@
 
 /*Mobile*/
 @media (max-width: 767px) {
+    :root {
+        --page-banner-padding-block: clamp(20px, 6vw, 50px);
+        --page-banner-padding-inline: clamp(10px, 3vw, 50px);
+    }
 
+    /*Banners*/
+    .banners-wrapper-col-3 .banner-title {
+        --page-banner-padding-block: clamp(20px, 6vw, 50px);
+        --page-banner-padding-inline: clamp(10px, 3vw, 50px);
+    }
+    .banners-wrapper-col-3 .banner-descriptor {
+        --page-banner-padding-block: clamp(20px, 6vw, 50px);
+        --page-banner-padding-inline: clamp(10px, 3vw, 50px);
+    }
+    .banner-descriptor {
+        font-size: clamp(10px, 2.7vw, 20px);
+    }
+    .banner-title {
+        font-size: clamp(29px, 5vw, 48px);
+    }
+    .banners-wrapper-col-3 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2px;
+    }
+    .banners-wrapper-col-2 {
+        gap: 2px;
+    }
+    .inspired-by-wrapper {
+        max-width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
+        margin-top: 2px;
+    }
+    /*Banners*/
 }
 
 /*Mobile S*/
 @media (max-width: 480px) {
+    :root {
+        --header-paddin-inline: 10px;
+    }
+
+    /*Header*/
+    .header-menu__item_user-link {
+        gap: 4px;
+    }
+    /*Header*/
 
 }

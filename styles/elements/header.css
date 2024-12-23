@@ -34,8 +34,10 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
+    padding: 0;
 }
 .header__logo-wrapper {
+    display: flex;
     z-index: 1;
     grid-area: 1 / 2 / 1 / 2;
 }
@@ -96,13 +98,13 @@
     align-items: center;
     justify-content: flex-end;
     gap: 16px;
-    margin-left: 38px;
+    margin-left: clamp(10px, 2vw, 38px);
 }
 .header-menu__item_user_mobile {
     display: none;
     align-items: center;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 3px;
 }
 .header-menu__item_user-link {
     display: flex;

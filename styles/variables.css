@@ -29,15 +29,16 @@
 
     --header-height: 100px;
     --header-paddin-inline: 60px;
-    --header-logo-width: 312px;
-    --header-column-gap: 60px;
+    --header-logo-width: clamp(174px, 20vw, 312px);
+    --header-column-gap: clamp(16px, 2vw, 60px);
     --header-border-width: 1px;
 
     --footer-padding: 60px;
 
     --menu-drop-lists-padding: 60px;
 
-    --page-banner-padding: 60px;
+    --page-banner-padding-block: 60px;
+    --page-banner-padding-inline: 60px;
 
     --swiper-theme-color: var(--color-accent);
     --swiper-navigation-color: var(--color-text-gray-1);
