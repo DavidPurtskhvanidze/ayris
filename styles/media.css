@@ -4,6 +4,12 @@
     /*    --header-height: 50px;*/
     /*}*/
 
+    /*Header*/
+    .menu-drop__list-link {
+        font-size: clamp(18px, 1.6vw, 20px);
+    }
+    /*Header*/
+
     /*Banners*/
     .banner-title {
         font-size: clamp(48px, 5vw, 65px);
@@ -43,25 +49,45 @@
     .menu-drop__picture-section {
         display: none;
     }
+    .header-menu-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: calc(100% + var(--header-border-width));
+        right: 100%;
+        width: 90%;
+        height: calc(100vh - var(--header-height));
+        overflow: auto;
+        background-color: var(--color-menu-bg);
+        color: var(--color-text-dark-2);
+        transition: transform 0.3s ease;
+    }
+    .header-menu-wrapper.open {
+        transform: translateX(100%);
+    }
     .header-menu {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        top: calc(100% + var(--header-border-width));
-        right: 100%;
-        width: 90%;
-        left: unset;
-        height: calc(100vh - var(--header-height));
-        overflow: auto;
-        background-color: var(--color-menu-bg);
-        transition: transform 0.3s ease;
+        position: static;
+        height: auto;
     }
-    .header-menu.open {
-        transform: translateX(100%);
-    }
-    .header-menu__mobile-button {
+    .header-menu:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-text-dark-2);
+        position: absolute;
+        top: 44px;
+        right: 0;
+        left: 0;
         display: block;
+    }
+
+    .header-menu__mobile-header {
+        display: flex;
     }
     .header-menu__list {
         flex-direction: column;
@@ -77,6 +103,9 @@
         height: var(--header-height);
         text-transform: uppercase;
         color: var(--color-text-dark-3);
+    }
+    .header-menu-mobile-copy {
+        display: flex;
     }
 
 
