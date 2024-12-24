@@ -10,24 +10,31 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: transparent;
+    background-color: var(--color-menu-bg);
     transition: background-color .3s ease;
-    color: var(--color-text-light-1);
+    color: var(--color-text-dark-3);
     border-bottom: var(--header-border-width) solid transparent;
 }
-.header svg *[stroke] {
+
+.header_transparent {
+    color: var(--color-text-light-1);
+    background-color: transparent;
+}
+.header_transparent svg *[stroke] {
     stroke: var(--color-text-light-1);
 }
-.header:hover svg *[stroke],
+.header_transparent:hover svg *[stroke],
 .header_color-active svg *[stroke] {
     stroke: var(--color-text-dark-2);
 }
-.header:hover,
+.header_transparent:hover,
 .header_color-active {
     background-color: var(--color-menu-bg);
     color: var(--color-text-dark-2);
     border-bottom-color: var(--color-text-dark-3);
 }
+
+
 .header-burger-button {
     display: none;
     width: 30px;

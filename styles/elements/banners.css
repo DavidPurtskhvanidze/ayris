@@ -154,7 +154,7 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
 
 /*Banner with links*/
 .banner-with-links {
-    height: 599px;
+    /*height: 599px;*/
 }
 .banner-with-links:after {
     content: '';
@@ -170,11 +170,8 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
 }
 .banner-with-links picture {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .banner-with-links picture img {
     width: 100%;
@@ -255,31 +252,31 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
 
 
 
-/*Aspect ration*/
-/* Aspect ratio greater than or equal to 16:9 */
-@media (min-aspect-ratio: 16/9) {
-    .banner {
-        height: calc(120vh - var(--header-height));
-    }
-}
-/* Aspect ratio less than 16:9 */
-@media (max-aspect-ratio: 16/9) {
-    .banner {
-        height: calc(50vh - var(--header-height));
-    }
-    .banners-wrapper-col-3 .banner {
-        height: calc(40vh - var(--header-height));
-    }
-    .banner-with-links {
-        height: 599px;
-    }
-}
+/*!*Aspect ration*!*/
+/*!* Aspect ratio greater than or equal to 16:9 *!*/
+/*@media (min-aspect-ratio: 16/9) {*/
+/*    .banner {*/
+/*        height: calc(120vh - var(--header-height));*/
+/*    }*/
+/*}*/
+/*!* Aspect ratio less than 16:9 *!*/
+/*@media (max-aspect-ratio: 16/9) {*/
+/*    .banner {*/
+/*        height: calc(50vh - var(--header-height));*/
+/*    }*/
+/*    .banners-wrapper-col-3 .banner {*/
+/*        height: calc(40vh - var(--header-height));*/
+/*    }*/
+/*    .banner-with-links {*/
+/*        height: 599px;*/
+/*    }*/
+/*}*/
 
-/* Aspect ratio between 4:3 and 16:9 */
-@media (min-aspect-ratio: 4/3) and (max-aspect-ratio: 16/9) {
-    .banner {
-        height: calc(100vh - var(--header-height));
-    }
+/*!* Aspect ratio between 4:3 and 16:9 *!*/
+/*@media (min-aspect-ratio: 4/3) and (max-aspect-ratio: 16/9) {*/
+/*    .banner {*/
+/*        height: calc(100vh - var(--header-height));*/
+/*    }*/
 
-}
-/*Aspect ration*/
+/*}*/
+/*!*Aspect ration*!*/

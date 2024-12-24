@@ -184,7 +184,7 @@
 
     /*Text sections*/
     .text-section_main-page {
-        padding: clamp(58px, 2vw, 90px) clamp(10px, 2vw, 60px);
+        padding: clamp(58px, 2vw, 90px) clamp(20px, 2vw, 60px);
     }
     .text-section-title_main-page {
         font-size: clamp(22px, 5vw, 38px);
@@ -238,6 +238,10 @@
         --page-banner-padding-block: clamp(20px, 6vw, 50px);
         --page-banner-padding-inline: clamp(10px, 3vw, 50px);
         --footer-padding: 10px;
+    }
+
+    .main-page-top-banner {
+        height: 84vh;
     }
 
     /*Buttons*/
