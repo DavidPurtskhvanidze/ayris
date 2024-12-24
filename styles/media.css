@@ -30,6 +30,8 @@
 
         --page-banner-padding-block: 50px;
         --page-banner-padding-inline: 50px;
+
+        --swiper-navigation-sides-offset: 10px;
     }
 
     /*Header*/
@@ -164,6 +166,18 @@
     }
     /*Banners*/
 
+    /*Banner with links*/
+    .banner-with-links-title {
+        font-size: clamp(29px, 4vw, 48px);
+    }
+    .banner-links-list {
+        border-top: none;
+    }
+    .banner-links-list-link {
+        font-size: clamp(14px, 2.5vw, 24px);
+    }
+    /*Banner with links*/
+
 
     /*Text sections*/
     .text-section_main-page {
@@ -205,9 +219,12 @@
         justify-content: center;
         padding-top: 90px;
     }
+    .banner-links-list {
+        gap: 10px;
+    }
     .banner-links-list-item {
-        flex: 1 1 calc(100% / 2);
-        max-width: calc(100% / 2);
+        flex: 1 1 calc((100% / 2) - 10px);
+        max-width: calc((100% / 2) - 10px);
     }
     /*Footer*/
 }
