@@ -28,8 +28,6 @@
 
         --menu-drop-lists-padding: 0;
 
-        --footer-padding: 10px;
-
         --page-banner-padding-block: 50px;
         --page-banner-padding-inline: 50px;
     }
@@ -166,9 +164,46 @@
     }
     /*Banners*/
 
+
+    /*Text sections*/
+    .text-section_main-page {
+        padding: clamp(58px, 2vw, 90px) clamp(10px, 2vw, 60px);
+    }
+    .text-section-title_main-page {
+        font-size: clamp(22px, 5vw, 38px);
+        margin-bottom: clamp(58px, 2vw, 86px);
+    }
+    .text-section-descriptor_main-page {
+        font-size: clamp(17px, 2.6vw, 20px);
+        letter-spacing: normal;
+    }
+    /*Text sections*/
+
+
+    /*Sections*/
+    .section-title {
+        font-size: clamp(17px, 2.6vw, 22px);
+        padding: clamp(calc(28px - 0.2em), 4vw, calc(45px - 0.2em)) 0;
+    }
+    /*Sections*/
+
     /*Footer*/
+    .footer-main__title {
+        margin-bottom: 50px;
+    }
+    .footer-info-copy {
+        font-size: 11px;
+    }
+    .footer-info-link {
+        font-size: 11px;
+    }
     .footer-main__section {
         width: calc(100% / 3);
+    }
+    .footer-main__section-form {
+        width: 100%;
+        justify-content: center;
+        padding-top: 90px;
     }
     .banner-links-list-item {
         flex: 1 1 calc(100% / 2);
@@ -182,7 +217,17 @@
     :root {
         --page-banner-padding-block: clamp(20px, 6vw, 50px);
         --page-banner-padding-inline: clamp(10px, 3vw, 50px);
+        --footer-padding: 10px;
     }
+
+    /*Buttons*/
+    .button {
+        height: 45px;
+    }
+    .button-text {
+        font-size: 12px;
+    }
+    /*Buttons*/
 
     /*Banners*/
     .banners-wrapper-col-3 .banner-title {
@@ -214,6 +259,23 @@
         margin-top: 2px;
     }
     /*Banners*/
+
+
+    /*Footer*/
+    .footer {
+        padding: 35px var(--footer-padding) 100px;
+    }
+    .footer-main__title {
+        margin-bottom: 20px;
+        font-size: 11px;
+    }
+    .footer-main__list {
+        gap: 7px;
+    }
+    .footer-main__link {
+        font-size: 11px;
+    }
+    /*Footer*/
 }
 
 /*Mobile S*/

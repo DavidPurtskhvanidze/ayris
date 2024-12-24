@@ -4,7 +4,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-text-dark-3);
-    padding: 45px 0;
+    padding: calc(45px - 0.2em) 0;
 }
 .section-button-wrapper {
     padding: 45px 0;
