@@ -1,5 +1,8 @@
 /*Desktop*/
 @media (max-width: 1280px) {
+    .inspired-by {
+        display: none;
+    }
     /*:root {*/
     /*    --header-height: 50px;*/
     /*}*/
