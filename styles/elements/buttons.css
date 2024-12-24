@@ -24,4 +24,5 @@
 }
 .button_gray:hover {
     background-color: var(--color-text-gray-1);
+    border-color: var(--color-text-gray-1);
 }

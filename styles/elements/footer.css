@@ -11,6 +11,11 @@
 .footer-main__section {
     width: 20%;
 }
+.footer-main__section-form {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
 .footer-main__title {
     font-weight: 400;
     font-size: 16px;
@@ -44,6 +49,7 @@
     font-size: 12px;
     text-align: right;
     letter-spacing: 0.02em;
+    text-decoration: underline;
 }
 .footer-logo {
 

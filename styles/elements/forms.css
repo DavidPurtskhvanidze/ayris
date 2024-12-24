@@ -1,0 +1,11 @@
+.input-group-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.form-field {
+    height: 63px;
+    background-color: transparent;
+    padding: 0 26px;
+    border: 1px solid var(--color-text-dark-3);
+}

@@ -1,0 +1,57 @@
+.club-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+}
+.club-form-title {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+.club-form-descriptor {
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 36px;
+}
+.club-form-descriptor_icon {
+    padding: 0 30px;
+}
+.club-form-descriptor_icon:before {
+    content: '';
+    display: block;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+}
+.club-form-agreements {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.club-form-agreements a {
+    text-decoration: underline;
+}
+.club-form-wrapper form {
+    width: 100%;
+    margin-bottom: 32px;
+}
+.club-form-wrapper .button {
+    font-family: 'RoundhandWeb', serif;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+
+}
+
