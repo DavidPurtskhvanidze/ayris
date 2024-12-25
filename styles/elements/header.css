@@ -125,7 +125,6 @@
 }
 .header-menu__item-drop-menu-wrapper {
     display: inline-block;
-    width: 100%;
 }
 .header-menu__item-drop-menu-wrapper:hover .header-menu__item-name {
     text-decoration: underline;

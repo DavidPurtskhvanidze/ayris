@@ -306,16 +306,16 @@
       </button>
     </div>
     <div class="catalog-sort-wrapper">
-      <button type="button" class="catalog-filter__button">
-        Фильтры
-      </button>
       <div class="dropdown">
-        <button type="button" class="dropdown__button">
+        <button type="button" class="dropdown__button dropdown__button_catalog-toolbar">
           Сортировать
         </button>
-        <div class="dropdown__content">
-
-        </div>
+        <ul class="dropdown__list">
+          <li class="dropdown__list-item">По умолчанию</li>
+          <li class="dropdown__list-item">По возрастанию цены</li>
+          <li class="dropdown__list-item">По убыванию цены</li>
+          <li class="dropdown__list-item">По новизне</li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -584,6 +584,7 @@
 </footer>
 
 <script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/modules/dropdown-list.js"></script>
 <script src="js/modules/menu.js"></script>
 <script src="js/modules/slider.js"></script>
 </body>

@@ -33,6 +33,8 @@
     --header-column-gap: clamp(16px, 2vw, 60px);
     --header-border-width: 1px;
 
+    --button-height: 60px;
+
     --footer-padding: 60px;
 
     --menu-drop-lists-padding: 60px;

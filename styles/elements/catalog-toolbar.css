@@ -3,6 +3,12 @@
     align-items: center;
     justify-content: space-between;
     height: 70px;
+    border-top: 1px solid var(--color-text-dark-3);
+    border-bottom: 1px solid var(--color-text-dark-3);
+    padding: 0 60px;
+}
+.dropdown__button_catalog-toolbar {
+    height: 70px;
 }
 .catalog-filter-wrapper {
 

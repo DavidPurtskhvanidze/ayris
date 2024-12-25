@@ -5,6 +5,7 @@
 @import url('globals.css');
 
 @import url('elements/buttons.css');
+@import url('elements/dropdown.css');
 @import url('elements/forms.css');
 @import url('elements/slider.css');
 @import url('elements/grid.css');
