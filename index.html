@@ -973,8 +973,15 @@
           </p>
           <form>
             <div class="input-group-column-wrapper">
-              <input class="form-field" type="email" name="email" placeholder="E-mail" required="">
-              <input class="form-field" type="text" name="name" placeholder="Ваше Имя" required="">
+              <!-- If the data in the field is invalid, add class input-container_invalid next to input-container -->
+              <div class="input-container input-container_invalid input-container_big-height">
+                <input class="input-field" type="email" id="email" placeholder="" required="" />
+                <label class="input-label" for="email">E-mail</label>
+              </div>
+              <div class="input-container input-container_big-height">
+                <input class="input-field" type="text" id="yourName" placeholder="" required="" />
+                <label class="input-label" for="yourName">Ваше Имя</label>
+              </div>
               <button class="button button_gray" type="submit">
                 Отправить
               </button>

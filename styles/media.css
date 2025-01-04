@@ -99,6 +99,9 @@
     .header-menu__list_end {
         text-align: start;
     }
+    .header-menu__item-drop-menu-wrapper {
+        width: 100%;
+    }
     .header-menu__item-drop-menu-wrapper .header-menu__item-name {
         display: none;
     }

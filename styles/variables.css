@@ -23,6 +23,7 @@
     --color-text-gray-1: #95928E;
     --color-text-light-1: var(--color-royal-paper);
     --color-menu-bg: var(--color-main-bg);
+    --color-invalid-input: var(--color-marie-antoinette);
 
     --font-family-base: 'LiteraturnayaWebBook', serif;
     --transition-duration: 0.2s;
@@ -41,6 +42,9 @@
 
     --page-banner-padding-block: 60px;
     --page-banner-padding-inline: 60px;
+
+    --input-height: 52px;
+    --input-inline-padding: 20px;
 
     --swiper-theme-color: var(--color-accent);
     --swiper-navigation-color: var(--color-text-gray-1);
