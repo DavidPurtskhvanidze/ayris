@@ -289,15 +289,165 @@
   </div>
 </header>
 <main class="main main-top-padding">
-  <section>
+  <div class="page-container page-container_padding-top">
     <h1 class="page-title">
       Корзина
     </h1>
-  </section>
+    <section class="grid-col-2">
+      <form>
+        <fieldset class="fieldset">
+          <!--fieldset legend-->
+          <legend class="fieldset__legend">Контакты</legend>
+
+          <div class="input-container">
+            <input class="input-field" type="email" id="basketEmail" placeholder="" required="" />
+            <label class="input-label" for="basketEmail">E-mail</label>
+          </div>
+          <label class="checkbox" for="newsLetter">
+            <input class="checkbox__input" type="checkbox" id="newsLetter" name="type" value="">
+            <span class="checkbox__control"></span>
+            <span class="checkbox__label">Подписаться на рассылку</span>
+          </label>
+          <div class="input-container">
+            <input class="input-field" type="text" id="basketYourName" placeholder="" required="" />
+            <label class="input-label" for="basketYourName">Имя Фамилия</label>
+          </div>
+          <div class="input-container">
+            <input class="input-field" type="text" id="basketPhone" placeholder="" required="" />
+            <label class="input-label" for="basketPhone">Телефон</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <!--fieldset legend-->
+          <legend class="fieldset__legend">Способ доставки</legend>
+
+          <div class="input-container">
+            <input class="input-field" type="text" id="basketCity" placeholder="" required="" />
+            <label class="input-label" for="basketCity">Город</label>
+          </div>
+          <label class="checkbox" for="basketCourier">
+            <input class="checkbox__input" type="checkbox" id="basketCourier" name="type" value="">
+            <span class="checkbox__control"></span>
+            <span class="checkbox__label">Курьер – Бесплатно (1-2 дня)</span>
+          </label>
+          <label class="checkbox" for="basketPickUpPoint">
+            <input class="checkbox__input" type="checkbox" id="basketPickUpPoint" name="type" value="">
+            <span class="checkbox__control"></span>
+            <span class="checkbox__label">Пункт выдачи СДЕК – Бесплатно (2-4 дня)</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <!--fieldset legend-->
+          <legend class="fieldset__legend">Адрес доставки</legend>
+
+          <div class="grid-col-3">
+            <div class="input-container">
+              <input class="input-field" type="text" id="basketStreet" placeholder="" required="" />
+              <label class="input-label" for="basketStreet">Улица</label>
+            </div>
+            <div class="input-container">
+              <input class="input-field" type="text" id="basketHome" placeholder="" required="" />
+              <label class="input-label" for="basketHome">Дом</label>
+            </div>
+            <div class="input-container">
+              <input class="input-field" type="text" id="basketApartment" placeholder="" required="" />
+              <label class="input-label" for="basketApartment">Квартира</label>
+            </div>
+          </div>
+
+          <textarea class="textarea" id="basketCommentary" name="comment" rows="5" cols="33" placeholder="Комментарий для курьера"></textarea>
+        </fieldset>
 
 
+        <fieldset class="fieldset">
+          <!--fieldset legend-->
+          <legend class="fieldset__legend">Способ оплаты</legend>
 
+          <label class="radio" for="pm1">
+            <input class="radio__input" type="radio" id="pm1" name="basketPaymentMethod" value="1">
+            <span class="radio__control"></span>
+            <span class="radio__label">CБП</span>
+          </label>
 
+          <label class="radio" for="pm2">
+            <input class="radio__input" type="radio" id="pm2" name="basketPaymentMethod" value="1">
+            <span class="radio__control"></span>
+            <span class="radio__label">Банковской картой</span>
+          </label>
+
+          <label class="radio" for="pm3">
+            <input class="radio__input" type="radio" id="pm3" name="basketPaymentMethod" value="1">
+            <span class="radio__control"></span>
+            <span class="radio__label">Долями Т-Банк</span>
+          </label>
+
+          <label class="radio" for="pm4">
+            <input class="radio__input" type="radio" id="pm4" name="basketPaymentMethod" value="1">
+            <span class="radio__control"></span>
+            <span class="radio__label">Долями Яндекс Пей</span>
+          </label>
+
+          <label class="radio" for="pm5">
+            <input class="radio__input" type="radio" id="pm5" name="basketPaymentMethod" value="1">
+            <span class="radio__control"></span>
+            <span class="radio__label">Курьеру при получении</span>
+          </label>
+
+          <div class="input-container">
+            <input class="input-field" type="text" id="basketCertificate" placeholder="" required="" />
+            <label class="input-label" for="basketCertificate">Подарочный сертификат</label>
+            <button class="input-container__button" type="button"></button>
+          </div>
+
+        </fieldset>
+      </form>
+
+      <div class="basket-summary">
+        <div class="input-container">
+          <input class="input-field" type="text" id="basketPromoCode" placeholder="" required="" />
+          <label class="input-label" for="basketPromoCode">Введите промокод</label>
+          <button class="input-container__button" type="button"></button>
+        </div>
+        <div class="basket-summary-note">
+          Стоимость заказа будет зависеть от способа доставки при оформлении заказа
+        </div>
+        <ul class="basket-summary-list">
+          <li class="basket-summary-list__item">
+            <div class="basket-summary-list__item-title">
+              Доставка:
+            </div>
+            <div class="basket-summary-list__item-value">
+              <span class="basket-summary-price">200 ₽</span>
+            </div>
+          </li>
+          <li class="basket-summary-list__item">
+            <div class="basket-summary-list__item-title">
+              Итого:
+            </div>
+            <div class="basket-summary-list__item-value">
+              <span class="basket-summary-price basket-summary-price_old">68.000 ₽</span>
+              <span class="basket-summary-price">65.000 ₽</span>
+            </div>
+          </li>
+        </ul>
+        <button class="basket-summary-option" type="button">
+          <span>добавить открытку к заказу</span>
+          <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.35" y="0.35" width="11.3" height="8.3" stroke="#32312F" stroke-width="0.7"/>
+            <path d="M0.75 1L6 6L11.25 1" stroke="#32312F" stroke-width="0.7" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="button button_gray" type="submit">
+          <span class="uppercase">Оплатить заказ</span>
+        </button>
+        <p class="basket-summary__agreements">
+          Нажимая на кнопку, я принимаю условия <a title="Публичная оферта" href="">публичной оферты</a> и <a title="Политика конфиденциальности" href="">политики конфидециальности</a>.
+        </p>
+      </div>
+    </section>
+  </div>
 </main>
 
 
