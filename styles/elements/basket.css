@@ -1,3 +1,14 @@
+.basket-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+}
+.basket-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
 .basket-summary {
     display: flex;
     flex-direction: column;

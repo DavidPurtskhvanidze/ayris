@@ -293,117 +293,200 @@
     <h1 class="page-title">
       Корзина
     </h1>
-    <section class="grid-col-2">
-      <form>
-        <fieldset class="fieldset">
-          <!--fieldset legend-->
-          <legend class="fieldset__legend">Контакты</legend>
-
-          <div class="input-container">
-            <input class="input-field" type="email" id="basketEmail" placeholder="" required="" />
-            <label class="input-label" for="basketEmail">E-mail</label>
-          </div>
-          <label class="checkbox" for="newsLetter">
-            <input class="checkbox__input" type="checkbox" id="newsLetter" name="type" value="">
-            <span class="checkbox__control"></span>
-            <span class="checkbox__label">Подписаться на рассылку</span>
-          </label>
-          <div class="input-container">
-            <input class="input-field" type="text" id="basketYourName" placeholder="" required="" />
-            <label class="input-label" for="basketYourName">Имя Фамилия</label>
-          </div>
-          <div class="input-container">
-            <input class="input-field" type="text" id="basketPhone" placeholder="" required="" />
-            <label class="input-label" for="basketPhone">Телефон</label>
-          </div>
-        </fieldset>
-
-        <fieldset class="fieldset">
-          <!--fieldset legend-->
-          <legend class="fieldset__legend">Способ доставки</legend>
-
-          <div class="input-container">
-            <input class="input-field" type="text" id="basketCity" placeholder="" required="" />
-            <label class="input-label" for="basketCity">Город</label>
-          </div>
-          <label class="checkbox" for="basketCourier">
-            <input class="checkbox__input" type="checkbox" id="basketCourier" name="type" value="">
-            <span class="checkbox__control"></span>
-            <span class="checkbox__label">Курьер – Бесплатно (1-2 дня)</span>
-          </label>
-          <label class="checkbox" for="basketPickUpPoint">
-            <input class="checkbox__input" type="checkbox" id="basketPickUpPoint" name="type" value="">
-            <span class="checkbox__control"></span>
-            <span class="checkbox__label">Пункт выдачи СДЕК – Бесплатно (2-4 дня)</span>
-          </label>
-        </fieldset>
-
-        <fieldset class="fieldset">
-          <!--fieldset legend-->
-          <legend class="fieldset__legend">Адрес доставки</legend>
-
-          <div class="grid-col-3">
-            <div class="input-container">
-              <input class="input-field" type="text" id="basketStreet" placeholder="" required="" />
-              <label class="input-label" for="basketStreet">Улица</label>
+    <section class="basket-wrapper">
+      <div class="basket">
+        <div class="basket-card-list">
+          <div class="card-horizontal">
+            <div class="card-horizontal-start">
+              <picture class="card-horizontal__picture">
+                <source srcset="images/pictures/card1.webp" type="image/webp">
+                <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+                <img class="card-horizontal__picture-img" src="images/pictures/card1.jpg" alt="Card">
+              </picture>
             </div>
-            <div class="input-container">
-              <input class="input-field" type="text" id="basketHome" placeholder="" required="" />
-              <label class="input-label" for="basketHome">Дом</label>
-            </div>
-            <div class="input-container">
-              <input class="input-field" type="text" id="basketApartment" placeholder="" required="" />
-              <label class="input-label" for="basketApartment">Квартира</label>
+            <div class="card-horizontal-end">
+              <div class="card-horizontal__info">
+                <div class="card-horizontal__info-top">
+                  <div class="card-horizontal__info-title">
+                    Шелковое платье <i>Rococo Marie Antoinette</i>
+                  </div>
+                  <div class="card-horizontal__info-item">
+                    Цвет: Marie Antoinette
+                  </div>
+                  <div class="card-horizontal__info-item">
+                    Размер: ХS
+                  </div>
+                </div>
+                <div class="card-horizontal__info-bottom">
+                  <button class="card-horizontal-link-button">
+                    Удалить
+                  </button>
+                </div>
+              </div>
+              <div class="card-horizontal__info-option">
+                <div class="input-count">
+                  <button class="input-count__decrease-button"></button>
+                  <input class="input-count__field" type="number" name="count" value="1" readonly>
+                  <button class="input-count__increase-button"></button>
+                </div>
+                <div class="card-horizontal__price">
+                  165.000 ₽
+                </div>
+              </div>
             </div>
           </div>
-
-          <textarea class="textarea" id="basketCommentary" name="comment" rows="5" cols="33" placeholder="Комментарий для курьера"></textarea>
-        </fieldset>
-
-
-        <fieldset class="fieldset">
-          <!--fieldset legend-->
-          <legend class="fieldset__legend">Способ оплаты</legend>
-
-          <label class="radio" for="pm1">
-            <input class="radio__input" type="radio" id="pm1" name="basketPaymentMethod" value="1">
-            <span class="radio__control"></span>
-            <span class="radio__label">CБП</span>
-          </label>
-
-          <label class="radio" for="pm2">
-            <input class="radio__input" type="radio" id="pm2" name="basketPaymentMethod" value="1">
-            <span class="radio__control"></span>
-            <span class="radio__label">Банковской картой</span>
-          </label>
-
-          <label class="radio" for="pm3">
-            <input class="radio__input" type="radio" id="pm3" name="basketPaymentMethod" value="1">
-            <span class="radio__control"></span>
-            <span class="radio__label">Долями Т-Банк</span>
-          </label>
-
-          <label class="radio" for="pm4">
-            <input class="radio__input" type="radio" id="pm4" name="basketPaymentMethod" value="1">
-            <span class="radio__control"></span>
-            <span class="radio__label">Долями Яндекс Пей</span>
-          </label>
-
-          <label class="radio" for="pm5">
-            <input class="radio__input" type="radio" id="pm5" name="basketPaymentMethod" value="1">
-            <span class="radio__control"></span>
-            <span class="radio__label">Курьеру при получении</span>
-          </label>
-
-          <div class="input-container">
-            <input class="input-field" type="text" id="basketCertificate" placeholder="" required="" />
-            <label class="input-label" for="basketCertificate">Подарочный сертификат</label>
-            <button class="input-container__button" type="button"></button>
+          <div class="card-horizontal">
+            <div class="card-horizontal-start">
+              <picture class="card-horizontal__picture">
+                <source srcset="images/pictures/card1.webp" type="image/webp">
+                <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+                <img class="card-horizontal__picture-img" src="images/pictures/card1.jpg" alt="Card">
+              </picture>
+            </div>
+            <div class="card-horizontal-end">
+              <div class="card-horizontal__info">
+                <div class="card-horizontal__info-top">
+                  <div class="card-horizontal__info-title">
+                    Шелковое платье Шелковое платье <i>Rococo Marie Antoinette</i>
+                  </div>
+                  <div class="card-horizontal__info-item">
+                    Цвет: Marie Antoinette
+                  </div>
+                  <div class="card-horizontal__info-item">
+                    Размер: ХS
+                  </div>
+                </div>
+                <div class="card-horizontal__info-bottom">
+                  <button class="card-horizontal-link-button">
+                    Удалить
+                  </button>
+                </div>
+              </div>
+              <div class="card-horizontal__info-option">
+                <div class="input-count">
+                  <button class="input-count__decrease-button"></button>
+                  <input class="input-count__field" type="number" name="count" value="100" readonly>
+                  <button class="input-count__increase-button"></button>
+                </div>
+                <div class="card-horizontal__price">
+                  65.000 ₽
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
-        </fieldset>
-      </form>
 
+        <form>
+          <fieldset class="fieldset">
+            <!--fieldset legend-->
+            <legend class="fieldset__legend">Контакты</legend>
+
+            <div class="input-container">
+              <input class="input-field" type="email" id="basketEmail" placeholder="" required="" />
+              <label class="input-label" for="basketEmail">E-mail</label>
+            </div>
+            <label class="checkbox" for="newsLetter">
+              <input class="checkbox__input" type="checkbox" id="newsLetter" name="type" value="">
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Подписаться на рассылку</span>
+            </label>
+            <div class="input-container">
+              <input class="input-field" type="text" id="basketYourName" placeholder="" required="" />
+              <label class="input-label" for="basketYourName">Имя Фамилия</label>
+            </div>
+            <div class="input-container">
+              <input class="input-field" type="text" id="basketPhone" placeholder="" required="" />
+              <label class="input-label" for="basketPhone">Телефон</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <!--fieldset legend-->
+            <legend class="fieldset__legend">Способ доставки</legend>
+
+            <div class="input-container">
+              <input class="input-field" type="text" id="basketCity" placeholder="" required="" />
+              <label class="input-label" for="basketCity">Город</label>
+            </div>
+            <label class="checkbox" for="basketCourier">
+              <input class="checkbox__input" type="checkbox" id="basketCourier" name="type" value="">
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Курьер – Бесплатно (1-2 дня)</span>
+            </label>
+            <label class="checkbox" for="basketPickUpPoint">
+              <input class="checkbox__input" type="checkbox" id="basketPickUpPoint" name="type" value="">
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Пункт выдачи СДЕК – Бесплатно (2-4 дня)</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <!--fieldset legend-->
+            <legend class="fieldset__legend">Адрес доставки</legend>
+
+            <div class="grid-col-3">
+              <div class="input-container">
+                <input class="input-field" type="text" id="basketStreet" placeholder="" required="" />
+                <label class="input-label" for="basketStreet">Улица</label>
+              </div>
+              <div class="input-container">
+                <input class="input-field" type="text" id="basketHome" placeholder="" required="" />
+                <label class="input-label" for="basketHome">Дом</label>
+              </div>
+              <div class="input-container">
+                <input class="input-field" type="text" id="basketApartment" placeholder="" required="" />
+                <label class="input-label" for="basketApartment">Квартира</label>
+              </div>
+            </div>
+
+            <textarea class="textarea" id="basketCommentary" name="comment" rows="5" cols="33" placeholder="Комментарий для курьера"></textarea>
+          </fieldset>
+
+
+          <fieldset class="fieldset">
+            <!--fieldset legend-->
+            <legend class="fieldset__legend">Способ оплаты</legend>
+
+            <label class="radio" for="pm1">
+              <input class="radio__input" type="radio" id="pm1" name="basketPaymentMethod" value="1">
+              <span class="radio__control"></span>
+              <span class="radio__label">CБП</span>
+            </label>
+
+            <label class="radio" for="pm2">
+              <input class="radio__input" type="radio" id="pm2" name="basketPaymentMethod" value="1">
+              <span class="radio__control"></span>
+              <span class="radio__label">Банковской картой</span>
+            </label>
+
+            <label class="radio" for="pm3">
+              <input class="radio__input" type="radio" id="pm3" name="basketPaymentMethod" value="1">
+              <span class="radio__control"></span>
+              <span class="radio__label">Долями Т-Банк</span>
+            </label>
+
+            <label class="radio" for="pm4">
+              <input class="radio__input" type="radio" id="pm4" name="basketPaymentMethod" value="1">
+              <span class="radio__control"></span>
+              <span class="radio__label">Долями Яндекс Пей</span>
+            </label>
+
+            <label class="radio" for="pm5">
+              <input class="radio__input" type="radio" id="pm5" name="basketPaymentMethod" value="1">
+              <span class="radio__control"></span>
+              <span class="radio__label">Курьеру при получении</span>
+            </label>
+
+            <div class="input-container">
+              <input class="input-field" type="text" id="basketCertificate" placeholder="" required="" />
+              <label class="input-label" for="basketCertificate">Подарочный сертификат</label>
+              <button class="input-container__button" type="button"></button>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
       <div class="basket-summary">
         <div class="input-container">
           <input class="input-field" type="text" id="basketPromoCode" placeholder="" required="" />

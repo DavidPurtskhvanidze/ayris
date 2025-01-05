@@ -227,6 +227,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='7' height='13' viewBox='0 0 7 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6.5L1 12' stroke='%2332312F' stroke-linecap='round'/%3E%3C/svg%3E%0A");
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     width: 7px;
     height: 13px;
 }
@@ -256,3 +257,78 @@ textarea {
     outline: none;
     resize: none;
 }
+
+/*input count select*/
+.input-count {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 37px;
+    max-width: 100px;
+    background-color: transparent;
+    border: 1px solid var(--color-text-dark-3);
+}
+.input-count__decrease-button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    height: 37px;
+    width: 37px;
+}
+.input-count__decrease-button:after {
+    content: '';
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='2' viewBox='0 0 14 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.583496 1.36133H13.0834' stroke='%2332312F'/%3E%3C/svg%3E");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 2px;
+}
+.input-count__increase-button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    height: 37px;
+    width: 37px;
+}
+.input-count__increase-button:after {
+    content: '';
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='13' viewBox='0 0 14 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.916992 6.36212H13.4169' stroke='%2332312F'/%3E%3Cpath d='M7.16748 0.111343L7.16748 12.6112' stroke='%2332312F'/%3E%3C/svg%3E");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 13px;
+}
+.input-count__field {
+    width: 40px;
+    border: none;
+    pointer-events: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: default;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: var(--color-text-dark-3);
+}
+.input-count__field::-webkit-outer-spin-button,
+.input-count__field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input-count__field[type=number] {
+    -moz-appearance: textfield;
+}
+/*input count select*/
