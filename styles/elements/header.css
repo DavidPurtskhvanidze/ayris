@@ -10,7 +10,7 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: var(--color-menu-bg);
+    /*background-color: var(--color-menu-bg);*/
     transition: background-color .3s ease;
     color: var(--color-text-dark-3);
     border-bottom: var(--header-border-width) solid transparent;
@@ -27,6 +27,7 @@
 .header_color-active svg *[stroke] {
     stroke: var(--color-text-dark-2);
 }
+.header:hover,
 .header_transparent:hover,
 .header_color-active {
     background-color: var(--color-menu-bg);

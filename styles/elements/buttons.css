@@ -5,17 +5,15 @@
     width: 100%;
     cursor: pointer;
     transition: background-color .3s ease;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.05em;
 }
 .button:hover {
     background-color: var(--color-text-dark-3);
     color: var(--color-text-light-1);
 }
-.button-text {
-    font-size: 17px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
+
 
 .button_gray {
     border: 1px solid var(--color-text-dark-3);

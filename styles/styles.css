@@ -4,7 +4,9 @@
 @import url('utils.css');
 @import url('globals.css');
 
+@import url('elements/modal.css');
 @import url('elements/buttons.css');
+@import url('elements/bread-crumbs.css');
 @import url('elements/dropdown.css');
 @import url('elements/basket.css');
 @import url('elements/forms.css');
@@ -13,6 +15,7 @@
 @import url('elements/header.css');
 @import url('elements/footer.css');
 @import url('elements/catalog-toolbar.css');
+@import url('elements/product.css');
 @import url('elements/card.css');
 @import url('elements/card-horizontal.css');
 @import url('elements/club-form.css');

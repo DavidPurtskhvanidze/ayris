@@ -23,6 +23,8 @@
     --color-text-gray-1: #95928E;
     --color-text-light-1: var(--color-royal-paper);
     --color-menu-bg: var(--color-main-bg);
+    --color-modal-bg: var(--color-royal-paper);
+    --color-modal-backdrop: rgba(50, 49, 47, 0.30);
     --color-invalid-input: var(--color-marie-antoinette);
 
     --font-family-base: 'LiteraturnayaWebBook', serif;
