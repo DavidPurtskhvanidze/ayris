@@ -51,8 +51,8 @@ const bestsellersSlider = new Swiper('#bestsellersSlider', {
 const youWillLikeIt = new Swiper('#youWillLikeIt', {
     speed: 300,
     spaceBetween: 5,
-    slidesPerView: 1.3,
-    centeredSlides: true,
+    slidesPerView: 2,
+    centeredSlides: false,
     navigation: {
         nextEl: '#youWillLikeIt .swiper-button-next',
         prevEl: '#youWillLikeIt .swiper-button-prev',
@@ -75,8 +75,8 @@ const youWillLikeIt = new Swiper('#youWillLikeIt', {
 const recentlyWatched = new Swiper('#recentlyWatched', {
     speed: 300,
     spaceBetween: 5,
-    slidesPerView: 1.3,
-    centeredSlides: true,
+    slidesPerView: 2,
+    centeredSlides: false,
     navigation: {
         nextEl: '#recentlyWatched .swiper-button-next',
         prevEl: '#recentlyWatched .swiper-button-prev',

@@ -314,6 +314,24 @@
             </picture>
           </a>
         </div>
+        <div class="swiper-slide">
+          <a href="images/product/product3@2x.jpg" data-fancybox="gallery">
+            <picture class="product-picture">
+              <source srcset="images/product/product3.webp" type="image/webp">
+              <source srcset="images/product/product3.jpg" type="image/jpeg">
+              <img class="product-picture__img" src="images/product/product3.jpg" alt="Шелковое платье Rococo">
+            </picture>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="images/product/product4@2x.jpg" data-fancybox="gallery">
+            <picture class="product-picture">
+              <source srcset="images/product/product4.webp" type="image/webp">
+              <source srcset="images/product/product4.jpg" type="image/jpeg">
+              <img class="product-picture__img" src="images/product/product4.jpg" alt="Шелковое платье Rococo">
+            </picture>
+          </a>
+        </div>
       </div>
     </div>
     <div class="product-info">
@@ -402,17 +420,69 @@
           </label>
         </div>
 
-        <button class="product-size-guide-button">
+        <button data-fancybox data-src="#fn" class="product-size-guide-button">
           Гид по размерам
         </button>
       </div>
 
-      <button class="button" type="submit">
-        <i>Заказать монограмму</i>
-      </button>
-      <button class="button button_gray uppercase" type="submit">
-        Добавить в корзину
-      </button>
+      <div class="product-button-wrapper">
+        <button class="button" type="submit">
+          <i>Заказать монограмму</i>
+        </button>
+        <button class="button button_gray uppercase" type="submit">
+          Добавить в корзину
+        </button>
+      </div>
+
+      <div class="tabs">
+        <div class="tabs__header">
+          <ul class="tabs__header-list">
+            <li class="tabs__header-list-item">
+              <button data-tab="tab1" class="fn-tab-button tabs__header-button active">
+                Описание
+              </button>
+            </li>
+            <li class="tabs__header-list-item">
+              <button data-tab="tab2" class="fn-tab-button tabs__header-button">
+                Состав и уход
+              </button>
+            </li>
+            <li class="tabs__header-list-item">
+              <button data-tab="tab3" class="fn-tab-button tabs__header-button">
+                Доставка и уход
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tabs__body">
+          <div class="fn-tab-content tabs__body-content active" id="tab1">
+            <p>
+              Lorem tab 1 ipsum <i>dolor</i> sit amet, consectetur <span class="uppercase">adipisicing</span>
+              elit. Ad deleniti distinctio, dolore et facilis fugiat
+              impedit itaque minima natus nobis placeat quas quia ratione
+              rem totam, ut vitae? Temporibus, vel!
+            </p>
+          </div>
+          <div class="fn-tab-content tabs__body-content" id="tab2">
+            <p>
+              Lorem tab 2 ipsum dolor sit amet, consectetur adipisicing
+              elit. Ad deleniti distinctio, dolore et facilis fugiat
+              impedit itaque minima natus nobis placeat quas quia ratione
+              rem totam, ut vitae? Temporibus, vel!
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Ad deleniti distinctio, dolore et facilis fugiat
+              impedit itaque minima natus nobis placeat quas quia ratione
+              rem totam, ut vitae? Temporibus, vel!
+            </p>
+          </div>
+          <div class="fn-tab-content tabs__body-content" id="tab3">
+            <p>
+              Lorem tab 3 ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+        </div>
+      </div>
 
 
     </div>
@@ -930,9 +1000,25 @@
   </div>
 </footer>
 
+<div class="modal" id="fn" style="display:none; max-width:500px;">
+  <h2>Hello, world!</h2>
+  <p>
+    Try hitting the tab key and notice how the focus stays within the dialog
+    itself.
+  </p>
+  <p>
+    To close dialog hit the esc button, click on the overlay or just click the
+    close button.
+  </p>
+  <p>
+    Element used to launch the modal would receive focus back after closing.
+  </p>
+</div>
+
 <script src="js/libs/fancybox-5.0.min.js"></script>
 <script src="js/libs/swiper-bundle.min.js"></script>
 <script src="js/modules/menu.js"></script>
+<script src="js/modules/tabs.js"></script>
 <script src="js/modules/slider.js"></script>
 <script>
   Fancybox.bind("[data-fancybox]", {

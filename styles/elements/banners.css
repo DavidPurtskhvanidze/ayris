@@ -38,7 +38,7 @@
     font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 1.1;
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
     position: absolute;
     top: calc(var(--page-banner-padding-block) - 0.3em);
     left: var(--page-banner-padding-inline);
@@ -48,7 +48,7 @@
     font-size: 75px;
     font-weight: 400;
     letter-spacing: -0.05em;
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
     padding-right: 0.6em;
     position: absolute;
     right: var(--page-banner-padding-inline);
@@ -137,7 +137,7 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
     text-align: center;
 }
 .main-page-top-banner-title {
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
     font-style: italic;
     font-size: clamp(19px, 4vw, 34px);
     font-weight: 400;
@@ -146,7 +146,7 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
     margin-bottom: clamp(20px, 2.5vw, 42px);
 }
 .main-page-top-banner-descriptor {
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
     font-size: clamp(16px, 2.6vw, 20px);
     align-items: center;
 }
@@ -182,7 +182,7 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
     line-height: 1;
     font-size: 48px;
     letter-spacing: -0.01em;
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
     position: absolute;
     top: var(--page-banner-padding-block);
     left: var(--page-banner-padding-inline);
@@ -198,7 +198,7 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
     left: var(--page-banner-padding-inline);
     z-index: 1;
     padding: 30px 0 40px;
-    border-top: 1.3px solid var(--color-text-light-1);
+    border-top: 1.3px solid var(--color-light-1);
 }
 .banner-links-list-item {
     flex: 1;
@@ -207,10 +207,10 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
 .banner-links-list-link {
     font-size: 24px;
     text-transform: uppercase;
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
 }
 .banner-links-list-link:hover {
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
 }
 /*Banner with links*/
 

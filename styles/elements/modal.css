@@ -1,6 +1,6 @@
 :root {
     --fancybox-content-bg: var(--color-modal-bg);
-    --fancybox-content-color: var(--color-text-dark-3);
+    --fancybox-content-color: var(--color-dark-3);
 }
 .modal {
 
@@ -12,17 +12,17 @@
     --f-button-width: 18px;
     --f-button-height: 18px;
     --f-button-border-radius: 50%;
-    --f-button-color: var(--color-text-dark-2);
-    --f-button-hover-color: var(--color-text-gray-1);
+    --f-button-color: var(--color-dark-2);
+    --f-button-hover-color: var(--color-gray-1);
     --f-button-svg-width: 10px;
     --f-button-svg-height: 10px;
-    border: 1px solid var(--color-text-dark-2);
+    border: 1px solid var(--color-dark-2);
 }
 .is-compact .modal>.f-button.is-close-btn {
     top: 15px;
     right: 15px;
-    --f-button-color: var(--color-text-dark-2);
-    --f-button-hover-color: var(--color-text-gray-1);
+    --f-button-color: var(--color-dark-2);
+    --f-button-hover-color: var(--color-gray-1);
     --f-button-svg-width: 10px;
     --f-button-svg-height: 10px;
     --f-button-bg: transparent;

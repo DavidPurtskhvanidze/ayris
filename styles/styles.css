@@ -5,6 +5,7 @@
 @import url('globals.css');
 
 @import url('elements/modal.css');
+@import url('elements/tabs.css');
 @import url('elements/buttons.css');
 @import url('elements/bread-crumbs.css');
 @import url('elements/dropdown.css');

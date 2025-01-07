@@ -10,7 +10,7 @@
 }
 .inspired-by-banner {
     aspect-ratio: 1 / 1.4;
-    border: 1px solid var(--color-text-dark-1);
+    border: 1px solid var(--color-dark-1);
     border-radius: 100vw;
     position: relative;
     overflow: hidden;
@@ -40,7 +40,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     line-height: 1.1;
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
 }
 .inspired-by-banner__info-title {
     width: 90%;
@@ -50,11 +50,11 @@
     font-size: 89px;
     text-align: center;
     letter-spacing: -0.05em;
-    color: var(--color-text-light-1);
+    color: var(--color-light-1);
 }
 .inspired-by-info {
     aspect-ratio: 1 / 1.4;
-    border: 1px solid var(--color-text-dark-1);
+    border: 1px solid var(--color-dark-1);
     border-radius: 100vw;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    border: 1px solid var(--color-text-dark-1);
+    border: 1px solid var(--color-dark-1);
     overflow: hidden;
     margin-bottom: 57px;
 }

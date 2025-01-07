@@ -11,7 +11,7 @@
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.08em;
-    color: var(--color-text-dark-3);
+    color: var(--color-dark-3);
     position: relative;
 }
 .bread-crumbs__list-item:before {
@@ -30,5 +30,5 @@
     align-items: center;
     justify-content: center;
     height: 140px;
-    border-top: 1px solid var(--color-text-dark-3);
+    border-top: 1px solid var(--color-dark-3);
 }
