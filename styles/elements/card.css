@@ -91,3 +91,24 @@
     border-radius: 50%;
     border: 0.7px solid rgba(0, 0, 0, 0.4);
 }
+
+.cards-button-block {
+    display: flex;
+    flex-direction: column;
+}
+.cards-block {
+    display: flex;
+    gap: 5px;
+    flex: 1;
+}
+.cards-block .card-top {
+    position: relative;
+    aspect-ratio: 1 / 2.4;
+}
+.button-block {
+    padding-top: 64px;
+    text-align: center;
+}
+.button-block .button {
+    max-width: 312px;
+}

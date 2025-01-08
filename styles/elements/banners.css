@@ -37,7 +37,7 @@
     font-style: italic;
     font-size: 20px;
     letter-spacing: 0.02em;
-    line-height: 1.1;
+    line-height: 1.2;
     color: var(--color-light-1);
     position: absolute;
     top: calc(var(--page-banner-padding-block) - 0.3em);
@@ -118,6 +118,9 @@
 }
 div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
     margin-top: 5px;
+}
+.banners-wrapper-col-1_margin-bottom {
+    margin-bottom: 90px;
 }
 /*Banner common*/
 
