@@ -3,7 +3,24 @@
     --fancybox-content-color: var(--color-dark-3);
 }
 .modal {
-
+    display: none;
+    max-width: 500px;
+}
+.modal_padding {
+    padding: 84px;
+}
+.modal-title {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: var(--color-dark-3);
+    margin-bottom: 26px;
+}
+.modal-sub-title {
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color-dark-3);
+    margin-bottom: 18px;
 }
 .modal>.f-button.is-close-btn {
     top: 15px;
@@ -34,8 +51,5 @@
 /*fancybox*/
 .fancybox__container {
     --fancybox-bg: var(--color-modal-backdrop);
-}
-.fancybox__content {
-    padding: 0;
 }
 /*fancybox*/

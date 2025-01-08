@@ -5,7 +5,7 @@
     height: var(--header-height);
     padding-inline: var(--header-paddin-inline);
     column-gap: var(--header-column-gap);
-    z-index: 10;
+    z-index: 11;
     position: fixed;
     top: 0;
     right: 0;

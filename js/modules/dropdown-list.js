@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Find all dropdowns on the page
-    const dropdowns = document.querySelectorAll('.dropdown');
+    const dropdowns = document.querySelectorAll('.fn-dropdown');
 
     dropdowns.forEach(dropdown => {
-        const button = dropdown.querySelector('.dropdown__button');
-        const list = dropdown.querySelector('.dropdown__list');
-        const items = dropdown.querySelectorAll('.dropdown__list-item');
+        const button = dropdown.querySelector('.fn-dropdown-button');
+        const list = dropdown.querySelector('.fn-dropdown-list');
+        const items = dropdown.querySelectorAll('.fn-dropdown-list-item');
 
         // Open/close list by clicking on button
         button.addEventListener('click', () => {

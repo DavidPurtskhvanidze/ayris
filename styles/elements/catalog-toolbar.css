@@ -14,18 +14,84 @@
 
 }
 .catalog-filter__button {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    height: 70px;
+    padding: 0 60px;
+    color: var(--color-dark-3);
+}
+.catalog-filter__button:after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 1.27844L6.5 7.01615L1 1.27844' stroke='%2332312F' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 13px;
+    height: 8px;
+    display: block;
+    margin-left: 10px;
+    transition: transform 0.3s;
 }
 .catalog-filter-side-menu {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -430px;
     bottom: 0;
     width: 430px;
     height: 100vh;
     background-color: var(--color-menu-bg);
-    z-index: 11;
+    z-index: 12;
     padding: 50px 30px 50px 60px;
+    overflow: auto;
+    transition: all 0.3s ease;
+}
+.catalog-filter-side-menu.open {
+    left: 0;
+}
+.catalog-filter-side-menu::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+}
+.catalog-filter-side-menu::-webkit-scrollbar {
+    width: 4px;
+    background-color: #D9D9D9;
+}
+.catalog-filter-side-menu::-webkit-scrollbar-thumb {
+    background-color: #95928E;
+}
+.catalog-filter-side-menu__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.catalog-filter-reset-button {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    line-height: 1;
+    text-decoration-line: underline;
+    letter-spacing: 0.01em;
+    color: var(--color-dark-3);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.catalog-filter-close {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
 }
 .catalog-filter-list-wrapper {
     display: flex;
@@ -61,4 +127,11 @@
     line-height: 1;
     letter-spacing: 0.05em;
     color: var(--color-dark-3);
+}
+.catalog-filter-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }

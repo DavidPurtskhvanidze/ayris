@@ -394,7 +394,7 @@
                   xs
             </span>
           </label>
-          <label class="checkbox checkbox_disabled" for="size2" title="Size S">
+          <label data-fancybox data-src="#fn2" class="checkbox checkbox_disabled" for="size2" title="Size S">
             <input class="checkbox__input" disabled type="checkbox" id="size2" name="type" value="s" />
             <span class="checkbox__big-control">
                   s
@@ -999,6 +999,37 @@
 
   </div>
 </footer>
+
+<div class="modal modal_padding text-center" id="fn2">
+  <div class="modal-title">
+    Узнать о поступлении
+  </div>
+  <p class="modal-sub-title">
+    Мы уведомим вас, когда размер ХS появится на сайте
+  </p>
+  <form action="">
+    <fieldset class="fieldset">
+      <div class="input-container">
+        <input class="input-field" type="text" id="fld1" placeholder="" required="" />
+        <label class="input-label" for="fld1">Имя Фамилия</label>
+      </div>
+      <div class="input-container">
+        <input class="input-field" type="text" id="fld2" placeholder="" required="" />
+        <label class="input-label" for="fld2">Телефон</label>
+      </div>
+      <div class="input-container">
+        <input class="input-field" type="email" id="fld3" placeholder="" required="" />
+        <label class="input-label" for="fld3">E-mail</label>
+      </div>
+      <button class="button button_gray" type="submit">
+        <span class="uppercase">Подписаться</span>
+      </button>
+    </fieldset>
+    <p class="basket-summary__agreements">
+      Нажимая на кнопку, я принимаю условия <a title="Публичная оферта" href="">публичной оферты</a> и <a title="Политика конфиденциальности" href="">политики конфидециальности</a>.
+    </p>
+  </form>
+</div>
 
 <div class="modal" id="fn" style="display:none; max-width:500px;">
   <h2>Hello, world!</h2>
