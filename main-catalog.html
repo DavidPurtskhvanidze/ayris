@@ -505,9 +505,26 @@
             <!--fieldset legend-->
             <legend class="fieldset__legend fieldset__legend_border-top">Цена</legend>
 
-            <div class="input-container input-container_big-height">
-              <input class="input-field" type="text" id="name" placeholder="" required="" />
-              <label class="input-label" for="name">Ваше Имя</label>
+            <div class="catalog-filter-price">
+              <div class="catalog-price-inputs">
+                <div class="catalog-price-input-wrapper">
+                  <input type="number" id="priceInputMin" min="0" max="65000" value="0" step="10">
+                </div>
+                <div class="catalog-price-inputs__divider"></div>
+                <div class="catalog-price-input-wrapper">
+                  <input type="number" id="priceInputMax" min="0" max="65000" value="65000" step="10">
+                </div>
+              </div>
+              <div class="catalog-range-slider">
+                <div class="catalog-range-slider__track"></div>
+                <div class="fn-catalog-range catalog-range-slider__range"></div>
+                <input type="range" id="priceRangeMin" min="0" max="65000" value="0" step="10">
+                <input type="range" id="priceRangeMax" min="0" max="65000" value="65000" step="10">
+              </div>
+              <div class="catalog-price-labels">
+                <span id="priceMinLabel"></span>
+                <span id="priceMaxLabel"></span>
+              </div>
             </div>
 
           </fieldset>
@@ -792,34 +809,27 @@
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-top">
-          <picture class="card-top__picture">
-            <source srcset="images/pictures/card1.webp" type="image/webp">
-            <source srcset="images/pictures/card1.jpg" type="image/jpeg">
-            <img class="card-top__picture-img" src="images/pictures/card1.jpg" alt="Card">
-          </picture>
-          <a class="card-top__link" href="/" title="Сарафан Voyage: Сote d’Asur">
-            <span class="card-top__link-hidden-text">Сарафан Voyage: Сote d’Asur</span>
-          </a>
-          <ul class="card-colors">
-            <li class="card-colors_item" style="background-color: #F3C5B7"></li>
-            <li class="card-colors_item" style="background-color: #ACCAE1"></li>
-          </ul>
-        </div>
-        <div class="card-bottom">
-          <h4 class="card-title">
-            Сарафан Voyage: Сote d’Asur
-          </h4>
-          <p class="card-descriptor">
-            100% шелк с хлопком Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <div class="card-price">
-            <span class="card-price__value">68.000 ₽</span>
-            <span class="card-price__value_old">70.000 ₽</span>
+
+      <article class="card-banner">
+        <picture class="card-banner__picture">
+          <source srcset="images/pictures/banner13.webp" type="image/webp">
+          <source srcset="images/pictures/banner13.jpg" type="image/jpeg">
+          <img class="card-banner__picture-img" src="images/pictures/banner13.jpg" alt="Card">
+        </picture>
+        <div class="card-banner__info">
+          <div class="card-banner__title">
+            Коллекция
+            Resort
           </div>
+          <span class="card-banner__sub-title">
+            смотреть
+          </span>
         </div>
-      </div>
+        <a class="card-banner__link" title="Loungewear" href="">
+          <span class="card-banner__link-hidden-text">Loungewear</span>
+        </a>
+      </article>
+
       <div class="card">
         <div class="card-top">
           <picture class="card-top__picture">
@@ -964,7 +974,7 @@
     </div>
   </section>
 
-  <div class="banners-wrapper-col-1 banners-wrapper-col-1_margin-bottom">
+  <div class="banners-wrapper-col-1 banners-wrapper_margin-bottom">
     <article class="banner">
       <picture class="banner-bg-picture">
         <source srcset="images/pictures/banner10.webp" type="image/webp">
@@ -1106,7 +1116,7 @@
     </div>
   </section>
 
-  <section class="banners-wrapper-col-2">
+  <section class="banners-wrapper-col-2 banners-wrapper_margin-bottom">
     <article class="banner">
       <picture class="banner-bg-picture">
         <source srcset="images/pictures/banner11.webp" type="image/webp">
@@ -1315,6 +1325,7 @@
 
 <script src="js/libs/swiper-bundle.min.js"></script>
 <script src="js/modules/dropdown-list.js"></script>
+<script src="js/modules/range-slider.js"></script>
 <script src="js/modules/menu.js"></script>
 <script src="js/modules/sidebar.js"></script>
 <script src="js/modules/slider.js"></script>

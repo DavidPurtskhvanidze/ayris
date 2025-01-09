@@ -135,3 +135,99 @@
     justify-content: center;
     gap: 20px;
 }
+
+/*catalog price*/
+.catalog-price-inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.catalog-price-inputs__divider {
+    height: 40px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.catalog-price-inputs__divider:before {
+    content: '';
+    width: 60%;
+    height: 1px;
+    background-color: var(--color-dark-3);
+}
+.catalog-price-input-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--color-dark-3);
+    border: 1px solid var(--color-dark-2);
+    height: 40px;
+}
+.catalog-price-input-wrapper input {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--color-dark-3);
+}
+.catalog-price-input-currency {
+
+}
+.catalog-range-slider {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    margin-bottom: 20px;
+}
+.catalog-range-slider input[type="range"] {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    background: transparent;
+    margin: 0;
+}
+.catalog-range-slider input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-dark-3);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.catalog-range-slider__track {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 100%;
+    background: var(--color-gray-2);
+}
+.catalog-range-slider__range {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: var(--color-dark-3);
+}
+.catalog-price-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--color-dark-3);
+}
+/*catalog price*/

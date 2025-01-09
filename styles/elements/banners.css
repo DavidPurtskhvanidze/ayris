@@ -119,7 +119,7 @@
 div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
     margin-top: 5px;
 }
-.banners-wrapper-col-1_margin-bottom {
+.banners-wrapper_margin-bottom {
     margin-bottom: 90px;
 }
 /*Banner common*/
@@ -250,9 +250,67 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
     padding: 0 16px;
     width: auto;
 }
-
 /*Banner with text*/
 
+/*Card banner*/
+.card-banner {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+.card-banner__picture {
+    display: block;
+    aspect-ratio: 1 / 1.4;
+}
+.card-banner__picture-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-banner__info {
+    position: absolute;
+    align-self: center;
+    text-align: center;
+}
+.card-banner__title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.2;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--color-light-1);
+    margin-bottom: 16px;
+}
+.card-banner__sub-title {
+    font-size: 14px;
+    line-height: 1;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: var(--color-light-1);
+}
+.card-banner__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.card-banner__link-hidden-text {
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+/*Card banner*/
 
 
 /*!*Aspect ration*!*/
