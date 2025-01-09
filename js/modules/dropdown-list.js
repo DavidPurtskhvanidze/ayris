@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Open/close list by clicking on button
         button.addEventListener('click', () => {
             const isOpen = dropdown.classList.contains('open');
-            closeAllDropdowns(); // Закрываем все списки
+            closeAllDropdowns();
             if (!isOpen) {
                 dropdown.classList.add('open');
                 list.style.display = 'flex';
@@ -38,16 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close all lists when clicking outside the zone
     document.addEventListener('click', (event) => {
-        if (!event.target.closest('.dropdown')) {
+        if (!event.target.closest('.fn-dropdown')) {
             closeAllDropdowns();
         }
     });
 
     // Function to close all dropdowns
     function closeAllDropdowns() {
-        document.querySelectorAll('.dropdown').forEach(dropdown => {
+        document.querySelectorAll('.fn-dropdown').forEach(dropdown => {
             dropdown.classList.remove('open');
-            dropdown.querySelector('.dropdown__list').style.display = 'none';
+            dropdown.querySelector('.fn-dropdown-list').style.display = 'none';
         });
     }
 });
