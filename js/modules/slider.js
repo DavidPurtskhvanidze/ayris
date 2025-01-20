@@ -96,3 +96,28 @@ const recentlyWatched = new Swiper('#recentlyWatched', {
 
     }
 });
+
+const cartSuggestionsSlider = new Swiper('#cartSuggestionsSlider', {
+    speed: 300,
+    spaceBetween: 20,
+    slidesPerView: 2,
+    centeredSlides: false,
+    navigation: {
+        nextEl: '.cart-sidebar-suggestions_slider .swiper-button-next',
+        prevEl: '.cart-sidebar-suggestions_slider .swiper-button-prev',
+    },
+    // Responsive breakpoints
+    // breakpoints: {
+    //     // when window width is >= 767px
+    //     767: {
+    //         centeredSlides: false,
+    //         slidesPerView: 3,
+    //     },
+    //     // when window width is >= 1023px
+    //     1023: {
+    //         centeredSlides: false,
+    //         slidesPerView: 4,
+    //     },
+    //
+    // }
+});

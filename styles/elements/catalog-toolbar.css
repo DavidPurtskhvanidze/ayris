@@ -48,7 +48,7 @@
     z-index: 12;
     padding: 50px 30px 50px 60px;
     overflow: auto;
-    transition: all 0.3s ease;
+    transition: left 0.3s ease;
 }
 .catalog-filter-side-menu.open {
     left: 0;
@@ -84,14 +84,6 @@
     border: none;
     padding: 0;
     cursor: pointer;
-}
-.catalog-filter-close {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    width: 18px;
-    height: 18px;
 }
 .catalog-filter-list-wrapper {
     display: flex;

@@ -5,8 +5,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 17px;
-    height: 29px;
+    width: var(--swiper-button-next-prev-width);
+    height: var(--swiper-button-next-prev-height);
 
 }
 .swiper-button-prev:after,
@@ -16,6 +16,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 17px;
-    height: 29px;
+    width: var(--swiper-button-next-prev-width);
+    height: var(--swiper-button-next-prev-height);
 }

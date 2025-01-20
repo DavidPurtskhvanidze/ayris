@@ -5,6 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Категория</title>
 </head>
@@ -270,13 +271,13 @@
               <rect x="0.5" y="0.5" width="22" height="22" stroke="#F9F4EC"/>
             </svg>
           </a>
-          <a class="header-menu__item_user-link" href="/">
+          <button type="button" data-sidebar-open-button="cartSidebar" class="header-menu__item_user-link">
             <svg class="header-menu__item_user-link-icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.5" y="0.5" width="22" height="22" stroke="#F9F4EC"/>
               <path d="M16.7801 6.70964H13.92V6.4839C13.92 5.11423 12.8343 4 11.5 4C10.1657 4 9.07998 5.11423 9.07998 6.4839V6.70964H6.21993C6.09852 6.70964 6 6.81077 6 6.93538V17.7743C6 17.899 6.09852 18 6.21993 18H16.7801C16.9015 18 17 17.8989 17 17.7743V6.93538C17 6.81077 16.9015 6.70964 16.7801 6.70964ZM9.51999 6.4839C9.51999 5.3633 10.4082 4.45163 11.5 4.45163C12.5918 4.45163 13.48 5.3633 13.48 6.4839V6.70964H9.51999V6.4839ZM16.56 17.5485H6.44002V7.16127H9.07998V9.64518C9.07998 9.76995 9.1785 9.87092 9.29991 9.87092C9.42132 9.87092 9.51984 9.76979 9.51984 9.64518V7.16127H13.4799V9.64518C13.4799 9.76995 13.5784 9.87092 13.6998 9.87092C13.8212 9.87092 13.9197 9.76979 13.9197 9.64518V7.16127H16.5597V17.5485H16.56Z" fill="#F9F4EC" stroke="#F9F4EC" stroke-width="0.3"/>
             </svg>
             <span class="header-menu__item_user-link-count">99</span>
-          </a>
+          </button>
         </li>
       </ul>
     </nav>
@@ -303,19 +304,15 @@
   <!--catalog-toolbar-->
   <nav class="catalog-toolbar">
     <div class="catalog-filter-wrapper">
-      <button type="button" class="fn-open-sidebar catalog-filter__button">
+      <button type="button" data-sidebar-open-button="catalogFilter" class="catalog-filter__button">
         Фильтры
       </button>
-      <div class="fn-sidebar catalog-filter-side-menu">
+      <div data-sidebar-box="catalogFilter" class="catalog-filter-side-menu">
         <div class="catalog-filter-side-menu__head">
           <button type="reset" class="catalog-filter-reset-button">
             Отменить выбор
           </button>
-          <button type="button" class="fn-close-sidebar catalog-filter-close">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 0C13.9629 0 18 4.03714 18 9C18 13.9629 13.9629 18 9 18C4.03714 18 0 13.9629 0 9C0 4.03714 4.03714 0 9 0ZM9 16.7143C13.2533 16.7143 16.7143 13.2542 16.7143 9C16.7143 4.74665 13.2533 1.28571 9 1.28571C4.74665 1.28571 1.28572 4.74665 1.28572 9C1.28572 13.2542 4.74665 16.7143 9 16.7143ZM5.36379 6.27264L8.09115 9L5.36379 11.7274C5.23843 11.8527 5.17576 12.0175 5.17576 12.1822C5.17576 12.3469 5.23844 12.5108 5.36379 12.637C5.48915 12.7623 5.65389 12.825 5.81861 12.825C5.98334 12.825 6.14728 12.7623 6.27342 12.637L8.99996 9.9088L11.7273 12.6362C11.8527 12.7615 12.0174 12.8242 12.1821 12.8242C12.3468 12.8242 12.5108 12.7615 12.6369 12.6362C12.7623 12.5108 12.825 12.3461 12.825 12.1814C12.825 12.0166 12.7623 11.8527 12.6369 11.7265L9.90959 8.99918L12.6369 6.27182C12.7623 6.14646 12.825 5.98172 12.825 5.817C12.825 5.65227 12.7623 5.48833 12.6369 5.36219C12.3862 5.11147 11.9788 5.11147 11.7281 5.36219L8.99992 8.0912L6.27256 5.36384C6.02183 5.11311 5.61444 5.11311 5.36371 5.36384C5.23835 5.48919 5.17568 5.65393 5.17568 5.81865C5.17487 5.98258 5.23763 6.1473 5.36379 6.27264Z" fill="#4B4947"/>
-            </svg>
-          </button>
+          <button type="button" data-sidebar-close-button="catalogFilter" class="button-close"></button>
         </div>
         <form action="">
 
@@ -504,7 +501,7 @@
           </div>
         </form>
       </div>
-      <div class="fn-overlay page-overlay"></div>
+      <div data-sidebar-overlay="catalogFilter" class="page-overlay"></div>
     </div>
     <div class="catalog-sort-wrapper">
       <div class="fn-dropdown dropdown">
@@ -1117,6 +1114,265 @@
   </section>
 
 </main>
+
+<!--cartSidebar-->
+<div data-sidebar-box="cartSidebar" class="cart-sidebar">
+  
+  <!--cart-sidebar_head-->
+  <div class="cart-sidebar_head">
+    <div class="cart-sidebar_head-title">
+      Корзина, <span>3 товара</span>
+    </div>
+    <button type="button" data-sidebar-close-button="cartSidebar" class="button-close"></button>
+  </div>
+  
+  <!--cart-sidebar_content-->
+  <div class="cart-sidebar_content">
+    
+    <ul class="cart-sidebar-card_list">
+      <!--cart-sidebar-card_list-item-->
+      <li class="cart-sidebar-card_list-item">
+        <div class="card-horizontal">
+          <div class="card-horizontal-start">
+            <picture class="card-horizontal__picture">
+              <source srcset="images/pictures/card1.webp" type="image/webp">
+              <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+              <img class="card-horizontal__picture-img" src="images/pictures/card1.jpg" alt="card">
+            </picture>
+          </div>
+          <div class="card-horizontal-end">
+            <div class="card-horizontal__info">
+              <div class="card-horizontal__info-top">
+                <div class="card-horizontal__info-title">
+                  Шелковое платье <i>Rococo Marie Antoinette</i>
+                </div>
+                <div class="card-horizontal__info-item">
+                  Цвет: Marie Antoinette
+                </div>
+                <div class="card-horizontal__info-item">
+                  Размер: ХS
+                </div>
+              </div>
+              <div class="card-horizontal__info-bottom">
+                <div class="card-horizontal__info-count">
+                  1шт
+                </div>
+                <button class="card-horizontal-link-button">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!--cart-sidebar-card_list-item-->
+
+      <!--cart-sidebar-card_list-item-->
+      <li class="cart-sidebar-card_list-item">
+        <div class="card-horizontal">
+          <div class="card-horizontal-start">
+            <picture class="card-horizontal__picture">
+              <source srcset="images/pictures/card1.webp" type="image/webp">
+              <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+              <img class="card-horizontal__picture-img" src="images/pictures/card1.jpg" alt="card">
+            </picture>
+          </div>
+          <div class="card-horizontal-end">
+            <div class="card-horizontal__info">
+              <div class="card-horizontal__info-top">
+                <div class="card-horizontal__info-title">
+                  Шелковое платье <i>Rococo Marie Antoinette Rococo Marie Antoinette</i>
+                </div>
+                <div class="card-horizontal__info-item">
+                  Цвет: Marie Antoinette Antoinette
+                </div>
+                <div class="card-horizontal__info-item">
+                  Размер: L
+                </div>
+              </div>
+              <div class="card-horizontal__info-bottom">
+                <div class="card-horizontal__info-count">
+                  2шт
+                </div>
+                <button class="card-horizontal-link-button">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!--cart-sidebar-card_list-item-->
+
+      <!--cart-sidebar-card_list-item-->
+      <li class="cart-sidebar-card_list-item">
+        <div class="card-horizontal">
+          <div class="card-horizontal-start">
+            <picture class="card-horizontal__picture">
+              <source srcset="images/pictures/card1.webp" type="image/webp">
+              <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+              <img class="card-horizontal__picture-img" src="images/pictures/card1.jpg" alt="card">
+            </picture>
+          </div>
+          <div class="card-horizontal-end">
+            <div class="card-horizontal__info">
+              <div class="card-horizontal__info-top">
+                <div class="card-horizontal__info-title">
+                  Шелковое платье <i>Rococo Marie Antoinette</i>
+                </div>
+                <div class="card-horizontal__info-item">
+                  Цвет: Marie Antoinette
+                </div>
+                <div class="card-horizontal__info-item">
+                  Размер: ХS
+                </div>
+              </div>
+              <div class="card-horizontal__info-bottom">
+                <div class="card-horizontal__info-count">
+                  1шт
+                </div>
+                <button class="card-horizontal-link-button">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!--cart-sidebar-card_list-item-->
+    </ul>
+
+    <div class="cart-sidebar-control">
+      <div class="cart-sidebar-total">
+        <div class="cart-sidebar-total_label">
+          Итого:
+        </div>
+        <div class="cart-sidebar-total_num">
+          165.000 ₽
+        </div>
+      </div>
+      <button class="button button_gray" type="submit">
+        <span class="uppercase">Оформить заказ</span>
+      </button>
+    </div>
+    
+    <div class="cart-sidebar-suggestions">
+      <h4 class="cart-sidebar-suggestions_title">
+        Вам также может понравится
+      </h4>
+      <div class="cart-sidebar-suggestions_slider">
+        <div id="cartSuggestionsSlider" class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!--  Card  -->
+              <div class="card">
+                <div class="card-top">
+                  <picture class="card-top__picture">
+                    <source srcset="images/pictures/banner3.webp" type="image/webp">
+                    <source srcset="images/pictures/banner3.jpg" type="image/jpeg">
+                    <img class="card-top__picture-img" src="images/pictures/banner3.jpg" alt="Card">
+                  </picture>
+                  <a class="card-top__link" href="/" title="Сарафан Voyage: Сote d’Asur">
+                    <span class="card-top__link-hidden-text">Сарафан Voyage: Сote d’Asur</span>
+                  </a>
+                  <ul class="card-colors">
+                    <li class="card-colors_item" style="background-color: #F3C5B7"></li>
+                    <li class="card-colors_item" style="background-color: #ACCAE1"></li>
+                    <li class="card-colors_item" style="background-color: #D4A676"></li>
+                    <li class="card-colors_item" style="background-color: #F9F4EC"></li>
+                    <li class="card-colors_item" style="background-color: #55bc88"></li>
+                    <li class="card-colors_item" style="background-color: #F3C5B7"></li>
+                    <li class="card-colors_item" style="background-color: #ACCAE1"></li>
+                  </ul>
+                </div>
+                <div class="card-bottom">
+                  <h4 class="card-title">
+                    Сарафан Voyage: Сote d’Asur Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </h4>
+                  <p class="card-descriptor">
+                    100% шелк с хлопком Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <div class="card-price">
+                    <span class="card-price__value">68.000 ₽</span>
+                    <span class="card-price__value_old">70.000 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <!--  Card  -->
+            </div>
+            <div class="swiper-slide">
+              <!--  Card  -->
+              <div class="card">
+                <div class="card-top">
+                  <picture class="card-top__picture">
+                    <source srcset="images/pictures/card1.webp" type="image/webp">
+                    <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+                    <img class="card-top__picture-img" src="images/pictures/card1.jpg" alt="Card">
+                  </picture>
+                  <a class="card-top__link" href="/" title="Сарафан Voyage: Сote d’Asur">
+                    <span class="card-top__link-hidden-text">Сарафан Voyage: Сote d’Asur</span>
+                  </a>
+                  <ul class="card-colors">
+                    <li class="card-colors_item" style="background-color: #F3C5B7"></li>
+                    <li class="card-colors_item" style="background-color: #ACCAE1"></li>
+                  </ul>
+                </div>
+                <div class="card-bottom">
+                  <h4 class="card-title">
+                    Сарафан Voyage: Сote d’Asur
+                  </h4>
+                  <p class="card-descriptor">
+                    100% шелк с хлопком
+                  </p>
+                  <div class="card-price">
+                    <span class="card-price__value">68.000 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <!--  Card  -->
+            </div>
+            <div class="swiper-slide">
+              <!--  Card  -->
+              <div class="card">
+                <div class="card-top">
+                  <picture class="card-top__picture">
+                    <source srcset="images/pictures/card1.webp" type="image/webp">
+                    <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+                    <img class="card-top__picture-img" src="images/pictures/card1.jpg" alt="Card">
+                  </picture>
+                  <a class="card-top__link" href="/" title="Сарафан Voyage: Сote d’Asur">
+                    <span class="card-top__link-hidden-text">Сарафан Voyage: Сote d’Asur</span>
+                  </a>
+                  <ul class="card-colors">
+                    <li class="card-colors_item" style="background-color: #F3C5B7"></li>
+                  </ul>
+                </div>
+                <div class="card-bottom">
+                  <h4 class="card-title">
+                    Сарафан Voyage: Сote d’Asur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </h4>
+                  <p class="card-descriptor">
+                    100% шелк с хлопком
+                  </p>
+                  <div class="card-price">
+                    <span class="card-price__value">68.000 ₽</span>
+                    <span class="card-price__value_old">70.000 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <!--  Card  -->
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div data-sidebar-overlay="cartSidebar" class="page-overlay"></div>
+<!--cartSidebar-->
 
 
 <footer class="footer">

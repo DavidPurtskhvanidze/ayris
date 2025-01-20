@@ -229,7 +229,7 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
 }
 .banner-with-text-title {
     font-family: 'RoundhandWeb', serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 34px;
     line-height: 1;
     text-align: center;

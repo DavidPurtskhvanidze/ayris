@@ -25,7 +25,7 @@
     --color-light-1: var(--color-royal-paper);
     --color-menu-bg: var(--color-royal-paper);
     --color-modal-bg: var(--color-royal-paper);
-    --color-modal-backdrop: rgba(50, 49, 47, 0.30);
+    --color-modal-backdrop: #32312F;
     --color-invalid-input: var(--color-marie-antoinette);
 
     --font-family-base: 'LiteraturnayaWebBook', serif;
@@ -54,4 +54,13 @@
     --swiper-theme-color: var(--color-accent);
     --swiper-navigation-color: var(--color-gray-1);
     --swiper-navigation-sides-offset: 60px;
+    --swiper-button-next-prev-width: 17px;
+    --swiper-button-next-prev-height: 29px;
+
+    --card-bottom-padding: 22px;
+    --card-colors-padding: 22px;
+    --card-title-font-size: clamp(12px, 2.3vw, 14px);
+    --card-descriptor-font-size: clamp(10px, 2vw, 12px);
+    --card-price-value-font-size: clamp(14px, 2vw, 18px);
+    --card-price-value-old-font-size: clamp(12px, 2vw, 13px);
 }

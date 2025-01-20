@@ -1,31 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sidebar = document.querySelector('.fn-sidebar');
-    const overlay = document.querySelector('.fn-overlay');
-    const openButton = document.querySelector('.fn-open-sidebar');
-    const closeButton = document.querySelector('.fn-close-sidebar');
+    const sidebars = document.querySelectorAll('[data-sidebar-box]');
 
-    // Sidebar open function
-    const openSidebar = () => {
-        sidebar.classList.add('open');
-        overlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    };
+    sidebars.forEach(sidebar => {
+        const sidebarId = sidebar.getAttribute('data-sidebar-box');
 
-    // Sidebar close function
-    const closeSidebar = () => {
-        sidebar.classList.remove('open');
-        overlay.classList.remove('active');
-        document.body.style.overflow = '';
-    };
+        const overlay = document.querySelector(`[data-sidebar-overlay="${sidebarId}"]`);
+        const openButton = document.querySelector(`[data-sidebar-open-button="${sidebarId}"]`);
+        const closeButton = document.querySelector(`[data-sidebar-close-button="${sidebarId}"]`);
 
-    openButton.addEventListener('click', openSidebar);
-    closeButton.addEventListener('click', closeSidebar);
-    overlay.addEventListener('click', closeSidebar);
-
-    // Closing the sidebar when clicking outside of it
-    document.addEventListener('click', (e) => {
-        if (!sidebar.contains(e.target) && !openButton.contains(e.target) && overlay.classList.contains('active')) {
-            closeSidebar();
+        // Check that all elements are found
+        if (!sidebarId || !overlay || !openButton || !closeButton) {
+            console.warn(`Sidebar elements with ID "${sidebarId}" not found.`);
+            return;
         }
+
+        // Close all sidebars
+        const closeAllSidebars = () => {
+            sidebars.forEach(sb => {
+                const sbOverlay = document.querySelector(`[data-sidebar-overlay="${sb.getAttribute('data-sidebar-box')}"]`);
+                sb.classList.remove('open');
+                if (sbOverlay) {
+                    sbOverlay.classList.remove('active');
+                }
+            });
+            document.body.style.overflow = '';
+        };
+
+        // Opening the sidebar
+        const openSidebar = (e) => {
+            e.stopPropagation(); // Предотвращаем всплытие события
+            closeAllSidebars(); // Закрываем все другие сайдбары
+            sidebar.classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        // Close current sidebar
+        const closeSidebar = () => {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        openButton.addEventListener('click', openSidebar);
+        closeButton.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+
+        // Close on click outside sidebar
+        document.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) && overlay.classList.contains('active')) {
+                closeSidebar();
+            }
+        });
     });
 });
