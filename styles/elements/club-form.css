@@ -11,15 +11,14 @@
     font-weight: 400;
     text-align: center;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 36px;
+    margin-bottom: 2.2em;
 }
 .club-form-descriptor {
     font-style: italic;
     font-size: clamp(13px, 2vw, 15px);
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 36px;
+    margin-bottom: 2.4em;
 }
 .club-form-descriptor_icon {
     padding: 0 30px;
@@ -54,5 +53,52 @@
     font-size: 18px;
     letter-spacing: 0.06em;
     height: 63px;
+}
+
+.club-form-modal {
+    width: 396px;
+    padding: 40px 28px 28px;
+    background-color: var(--color-accent);
+    color: var(--color-royal-paper);
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 12;
+}
+.club-form-modal__icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.club-form-modal .button-close-light {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.club-form-modal .club-form-title {
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 1.1em;
+}
+.club-form-modal .club-form-descriptor_icon {
+    padding: 0;
+}
+.club-form-modal .input-container {
+    border: 1px solid var(--color-royal-paper);
+}
+.club-form-modal .input-field {
+    color: var(--color-royal-paper);
+}
+.club-form-modal .input-label {
+    color: rgba(249, 244, 236, 0.7);;
+}
+.club-form-modal .button {
+    border-color: var(--color-royal-paper);
+    background-color: var(--color-royal-paper);
+    color: var(--color-accent);
+    transition: opacity .3s ease;
+}
+.club-form-modal .button:hover {
+    opacity: 0.9;
 }
 
