@@ -44,13 +44,13 @@
     width: 20%;
 }
 .menu-drop__list-title {
-    font-size: 16px;
+    font-size: clamp(14px, calc(16/var(--clamp-width)*100vw), 16px);
     text-transform: uppercase;
     letter-spacing: 0.12em;
     height: 47px;
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: clamp(60px, calc(100/var(--clamp-width)*100vw), 100px);
 }
 .menu-drop__list {
     display: flex;
@@ -88,7 +88,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='11' height='2' viewBox='0 0 11 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.3188 0.496V1.264H0.39875V0.496H10.3188Z' fill='%234B4947'/%3E%3C/svg%3E%0A");
 }
 .menu-drop__list-link {
-    font-size: 20px;
+    font-size: clamp(14px, calc(20/var(--clamp-width)*100vw), 20px);
     letter-spacing: 0.05em;
 }
 .menu-drop__list-link_underline {
@@ -126,7 +126,7 @@
 .menu-drop__list-link-picture-title {
     position: absolute;
     top: 10%;
-    font-size: 12px;
+    font-size: clamp(10px, calc(12/var(--clamp-width)*100vw), 12px);
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--color-light-1);
@@ -136,7 +136,8 @@
 .menu-drop__list-link-picture-name {
     position: absolute;
     bottom: 10%;
-    font-size: 29px;
+    font-size: clamp(18px, calc(29/var(--clamp-width)*100vw), 29px);
+    font-style: italic;
     letter-spacing: -0.03em;
     color: var(--color-light-1);
     width: 60%;

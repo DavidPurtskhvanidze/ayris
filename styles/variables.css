@@ -30,13 +30,14 @@
 
     --font-family-base: 'LiteraturnayaWebBook', serif;
     --transition-duration: 0.2s;
+    --clamp-width: 1440;
 
     --page-container-width: 80%;
 
     --header-height: 100px;
     --header-paddin-inline: 60px;
-    --header-logo-width: clamp(174px, 20vw, 312px);
-    --header-column-gap: clamp(16px, 2vw, 60px);
+    --header-logo-width: clamp(174px, calc(312/var(--clamp-width)*100vw), 312px);
+    --header-column-gap: clamp(16px, calc(60/var(--clamp-width)*100vw), 60px);
     --header-border-width: 1px;
 
     --button-height: 60px;
@@ -59,8 +60,8 @@
 
     --card-bottom-padding: 22px;
     --card-colors-padding: 22px;
-    --card-title-font-size: clamp(12px, 2.3vw, 14px);
-    --card-descriptor-font-size: clamp(10px, 2vw, 12px);
-    --card-price-value-font-size: clamp(14px, 2vw, 18px);
-    --card-price-value-old-font-size: clamp(12px, 2vw, 13px);
+    --card-title-font-size: clamp(12px, calc(14/var(--clamp-width)*100vw), 14px);
+    --card-descriptor-font-size: clamp(10px, calc(12/var(--clamp-width)*100vw), 12px);
+    --card-price-value-font-size: clamp(14px, calc(18/var(--clamp-width)*100vw), 18px);
+    --card-price-value-old-font-size: clamp(12px, calc(13/var(--clamp-width)*100vw), 13px);
 }

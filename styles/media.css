@@ -1,31 +1,18 @@
 /*Desktop*/
 @media (max-width: 1280px) {
     .page-container {
-        width: 100%;
+        --page-container-width: 100%;
         padding-inline: 16px;
     }
 
-    .inspired-by {
-        display: none;
-    }
+
+    /*.inspired-by {*/
+    /*    display: none;*/
+    /*}*/
     /*:root {*/
     /*    --header-height: 50px;*/
     /*}*/
 
-    /*Header*/
-    .menu-drop__list-link {
-        font-size: clamp(18px, 1.6vw, 20px);
-    }
-    /*Header*/
-
-    /*Banners*/
-    .banner-title {
-        font-size: clamp(48px, 5vw, 65px);
-    }
-    .banners-wrapper-col-3 .banner-title {
-        font-size: clamp(29px, 3.5vw, 48px);
-    }
-    /*Banners*/
 }
 
 /*Tablet*/
@@ -134,9 +121,6 @@
         gap: 6px;
         padding-right: 0;
     }
-    .menu-drop__list-link {
-        font-size: 14px;
-    }
     .menu-drop {
         position: static;
         opacity: 1;
@@ -190,28 +174,6 @@
     /*Banner with links*/
 
 
-    /*Text sections*/
-    .text-section_main-page {
-        padding: clamp(58px, 2vw, 90px) clamp(20px, 2vw, 60px);
-    }
-    .text-section-title_main-page {
-        font-size: clamp(22px, 5vw, 38px);
-        margin-bottom: clamp(58px, 2vw, 86px);
-    }
-    .text-section-descriptor_main-page {
-        font-size: clamp(17px, 2.6vw, 20px);
-        letter-spacing: normal;
-    }
-    /*Text sections*/
-
-
-    /*Sections*/
-    .section-title {
-        font-size: clamp(15px, 2.6vw, 22px);
-        padding: clamp(calc(28px - 0.2em), 4vw, calc(45px - 0.2em)) 0;
-    }
-    /*Sections*/
-
     /*Footer*/
     .footer-main__title {
         margin-bottom: 50px;
@@ -243,8 +205,8 @@
 /*Mobile*/
 @media (max-width: 767px) {
     :root {
-        --page-banner-padding-block: clamp(20px, 6vw, 50px);
-        --page-banner-padding-inline: clamp(10px, 3vw, 50px);
+        --page-banner-padding-block: clamp(20px, calc(50/var(--clamp-width)*100vw), 50px);
+        --page-banner-padding-inline: clamp(10px, calc(50/var(--clamp-width)*100vw), 50px);
         --footer-padding: 10px;
     }
 
@@ -262,20 +224,6 @@
     /*Buttons*/
 
     /*Banners*/
-    .banners-wrapper-col-3 .banner-title {
-        --page-banner-padding-block: clamp(20px, 6vw, 50px);
-        --page-banner-padding-inline: clamp(10px, 3vw, 50px);
-    }
-    .banners-wrapper-col-3 .banner-descriptor {
-        --page-banner-padding-block: clamp(20px, 6vw, 50px);
-        --page-banner-padding-inline: clamp(10px, 3vw, 50px);
-    }
-    .banner-descriptor {
-        font-size: clamp(10px, 2.7vw, 20px);
-    }
-    .banner-title {
-        font-size: clamp(29px, 5vw, 48px);
-    }
     .banners-wrapper-col-3 {
         grid-template-columns: repeat(1, 1fr);
         gap: 2px;

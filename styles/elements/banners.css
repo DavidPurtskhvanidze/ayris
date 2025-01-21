@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
     font-style: italic;
-    font-size: 20px;
+    font-size: clamp(10px, calc(20/var(--clamp-width)*100vw), 20px);
     letter-spacing: 0.02em;
     line-height: 1.2;
     color: var(--color-light-1);
@@ -45,7 +45,7 @@
 }
 .banner-title {
     line-height: 1;
-    font-size: 75px;
+    font-size: clamp(29px, calc(75/var(--clamp-width)*100vw), 75px);
     font-weight: 400;
     letter-spacing: -0.05em;
     color: var(--color-light-1);
@@ -109,11 +109,11 @@
     gap: 5px;
 }
 .banners-wrapper-col-3 .banner-title {
-    font-size: 48px;
+    font-size: clamp(29px, calc(48/var(--clamp-width)*100vw), 48px);
     letter-spacing: -0.05em;
 }
 .banners-wrapper-col-4 .banner-title {
-    font-size: 48px;
+    font-size: clamp(29px, calc(48/var(--clamp-width)*100vw), 48px);
     letter-spacing: -0.05em;
 }
 div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
@@ -142,15 +142,15 @@ div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
 .main-page-top-banner-title {
     color: var(--color-light-1);
     font-style: italic;
-    font-size: clamp(19px, 4vw, 34px);
+    font-size: clamp(19px, calc(34/var(--clamp-width)*100vw), 34px);
     font-weight: 400;
     line-height: 1;
     text-align: center;
-    margin-bottom: clamp(20px, 2.5vw, 42px);
+    margin-bottom: clamp(20px, calc(42/var(--clamp-width)*100vw), 42px);
 }
 .main-page-top-banner-descriptor {
     color: var(--color-light-1);
-    font-size: clamp(16px, 2.6vw, 20px);
+    font-size: clamp(16px, calc(20/var(--clamp-width)*100vw), 20px);
     align-items: center;
 }
 /*Banner main*/

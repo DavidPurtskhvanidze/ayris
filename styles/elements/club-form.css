@@ -64,6 +64,7 @@
     bottom: 60px;
     right: 60px;
     z-index: 12;
+    display: none;
 }
 .club-form-modal__icon {
     position: absolute;
