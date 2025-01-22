@@ -15,7 +15,7 @@
 }
 .club-form-descriptor {
     font-style: italic;
-    font-size: clamp(13px, 2vw, 15px);
+    font-size: clamp(13px, calc(15/var(--clamp-width)*100vw), 15px);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 2.4em;

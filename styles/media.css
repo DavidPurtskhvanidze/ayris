@@ -162,28 +162,18 @@
     /*Banners*/
 
     /*Banner with links*/
-    .banner-with-links-title {
-        font-size: clamp(29px, 4vw, 48px);
-    }
     .banner-links-list {
         border-top: none;
+        gap: 10px;
     }
-    .banner-links-list-link {
-        font-size: clamp(14px, 2.5vw, 24px);
+    .banner-links-list-item {
+        flex: 1 1 calc((100% / 2) - 10px);
+        max-width: calc((100% / 2) - 10px);
     }
     /*Banner with links*/
 
 
     /*Footer*/
-    .footer-main__title {
-        margin-bottom: 50px;
-    }
-    .footer-info-copy {
-        font-size: 11px;
-    }
-    .footer-info-link {
-        font-size: 11px;
-    }
     .footer-main__section {
         width: calc(100% / 3);
     }
@@ -192,12 +182,8 @@
         justify-content: center;
         padding-top: 90px;
     }
-    .banner-links-list {
-        gap: 10px;
-    }
-    .banner-links-list-item {
-        flex: 1 1 calc((100% / 2) - 10px);
-        max-width: calc((100% / 2) - 10px);
+    .footer-info {
+        order: 1;
     }
     /*Footer*/
 }
@@ -212,6 +198,11 @@
 
     .main-page-top-banner {
         height: 84vh;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
     }
 
     /*Buttons*/
@@ -238,6 +229,16 @@
     div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
         margin-top: 2px;
     }
+    .cards-block {
+        gap: 2px;
+    }
+    .card-colors__item {
+        width: 6px;
+        height: 6px;
+    }
+    .card-colors {
+        gap: 4px;
+    }
     /*Banners*/
 
 
@@ -245,15 +246,8 @@
     .footer {
         padding: 35px var(--footer-padding) 100px;
     }
-    .footer-main__title {
-        margin-bottom: 20px;
-        font-size: 11px;
-    }
     .footer-main__list {
         gap: 7px;
-    }
-    .footer-main__link {
-        font-size: 11px;
     }
     /*Footer*/
 }

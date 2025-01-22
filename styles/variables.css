@@ -58,8 +58,7 @@
     --swiper-button-next-prev-width: 17px;
     --swiper-button-next-prev-height: 29px;
 
-    --card-bottom-padding: 22px;
-    --card-colors-padding: 22px;
+    --card-colors-padding: clamp(12px, calc(22/var(--clamp-width)*100vw), 22px);
     --card-title-font-size: clamp(12px, calc(14/var(--clamp-width)*100vw), 14px);
     --card-descriptor-font-size: clamp(10px, calc(12/var(--clamp-width)*100vw), 12px);
     --card-price-value-font-size: clamp(14px, calc(18/var(--clamp-width)*100vw), 18px);

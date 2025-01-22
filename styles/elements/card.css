@@ -45,7 +45,7 @@
     object-fit: cover;
 }
 .card-bottom {
-    padding: var(--card-bottom-padding);
+    padding: clamp(10px, calc(22/var(--clamp-width)*100vw), 22px);
 }
 .card-title {
     font-size: var(--card-title-font-size);
