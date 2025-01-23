@@ -52,6 +52,8 @@
     --input-height: 52px;
     --input-inline-padding: 20px;
 
+    --catalog-toolbar-height: 70px;
+
     --swiper-theme-color: var(--color-accent);
     --swiper-navigation-color: var(--color-gray-1);
     --swiper-navigation-sides-offset: 60px;

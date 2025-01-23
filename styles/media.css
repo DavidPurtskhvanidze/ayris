@@ -172,6 +172,11 @@
     }
     /*Banner with links*/
 
+    /*Catalog toolbar*/
+    .catalog-toolbar {
+        --catalog-toolbar-height: 40px;
+    }
+    /*Catalog toolbar*/
 
     /*Footer*/
     .footer-main__section {
@@ -203,6 +208,10 @@
     .card-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2px;
+    }
+
+    .card-grid__big-banner {
+        grid-area: 2 / 1 / 3 / 3;
     }
 
     /*Buttons*/
@@ -263,5 +272,80 @@
         gap: 4px;
     }
     /*Header*/
+
+    /*Catalog toolbar*/
+    .catalog-filter-wrapper {
+        flex: 1;
+        position: relative;
+    }
+    .catalog-filter-wrapper:after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -1px;
+        background-color: var(--color-dark-3);
+    }
+    .catalog-sort-wrapper {
+        flex: 1;
+    }
+    .catalog-filter__button {
+        width: 100%;
+        justify-content: space-between;
+        padding-inline: 10px;
+    }
+    .dropdown__button_catalog-toolbar {
+        width: 100%;
+        justify-content: space-between;
+        padding-inline: 10px;
+    }
+    /*Catalog toolbar*/
+
+    /*Product popup*/
+    .product-popup {
+        bottom: 14px;
+        right: 14px;
+    }
+    .product-popup__button {
+        height: 22px;
+        width: 22px;
+    }
+    .product-popup__button:before {
+        width: 8px;
+        height: 10px;
+    }
+    .product-popup__box {
+        width: 184px;
+        margin-inline-end: 0;
+        margin-block-end: 14px;
+    }
+    .product-popup__picture {
+        width: 50px;
+    }
+    .product-popup__info-title {
+        font-size: 12px;
+    }
+    .product-popup__info-price-color {
+        gap: 8px;
+        padding-inline-end: 26px;
+    }
+    .product-popup-colors-list {
+        line-height: 8px;
+    }
+    .product-popup-colors-list_item {
+        width: 8px;
+        height: 8px;
+    }
+    .product-popup__link {
+        height: 22px;
+        width: 22px;
+    }
+    .product-popup__link:before {
+        width: 8px;
+        height: 10px;
+    }
+    /*Product popup*/
 
 }

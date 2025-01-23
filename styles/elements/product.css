@@ -157,7 +157,8 @@
     transform: translateY(10px);
     transition: visibility .3s ease,opacity .3s ease,transform .3s ease;
     visibility: hidden;
-    margin: 0 40px 22px 0;
+    margin-inline-end: 40px;
+    margin-block-end: 22px;
     padding: 8px;
 }
 .product-popup__box.open {
@@ -211,7 +212,7 @@
     gap: 4px;
     line-height: 10px;
 }
-.product-popup-colors-list_item span {
+.product-popup-colors-list_item {
     display: inline-block;
     width: 10px;
     height: 10px;

@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: var(--catalog-toolbar-height);
     border-top: 1px solid var(--color-dark-3);
     border-bottom: 1px solid var(--color-dark-3);
 }
 .dropdown__button_catalog-toolbar {
-    height: 70px;
-    padding: 0 60px;
+    height: var(--catalog-toolbar-height);
+    padding-inline: clamp(10px, calc(60/var(--clamp-width)*100vw), 60px);
 }
 .catalog-filter-wrapper {
 
@@ -20,9 +20,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    height: 70px;
-    padding: 0 60px;
+    font-size: clamp(12px, calc(16/var(--clamp-width)*100vw), 16px);
+    height: var(--catalog-toolbar-height);
+    padding-inline: clamp(10px, calc(60/var(--clamp-width)*100vw), 60px);
     color: var(--color-dark-3);
 }
 .catalog-filter__button:after {
@@ -31,10 +31,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 13px;
-    height: 8px;
+    width: 1em;
+    height: 0.5em;
     display: block;
-    margin-left: 10px;
+    margin-left: 0.6em;
     transition: transform 0.3s;
 }
 .catalog-filter-side-menu {

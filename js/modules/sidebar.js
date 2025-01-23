@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const sidebarId = sidebar.getAttribute('data-sidebar-box');
 
         const overlay = document.querySelector(`[data-sidebar-overlay="${sidebarId}"]`);
-        const openButton = document.querySelector(`[data-sidebar-open-button="${sidebarId}"]`);
+        const openButtons = document.querySelectorAll(`[data-sidebar-open-button="${sidebarId}"]`); // Находим все кнопки
         const closeButton = document.querySelector(`[data-sidebar-close-button="${sidebarId}"]`);
 
         // Check that all elements are found
-        if (!sidebarId || !overlay || !openButton || !closeButton) {
-            console.warn(`Sidebar elements with ID "${sidebarId}" not found.`);
+        if (!sidebarId || !overlay || openButtons.length === 0 || !closeButton) {
+            console.warn(`Sidebar elements with ID "${sidebarId}" not found or missing buttons.`);
             return;
         }
 
@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Opening the sidebar
         const openSidebar = (e) => {
-            e.stopPropagation(); // Предотвращаем всплытие события
-            closeAllSidebars(); // Закрываем все другие сайдбары
+            e.stopPropagation();
+            closeAllSidebars();
             sidebar.classList.add('open');
             overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
@@ -42,8 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = '';
         };
 
-        openButton.addEventListener('click', openSidebar);
+        // Add handlers to all open buttons
+        openButtons.forEach(button => {
+            button.addEventListener('click', openSidebar);
+        });
+
+        // Adding Close Button Handlers
         closeButton.addEventListener('click', closeSidebar);
+
+        // Close sidebar when clicking overlay
         overlay.addEventListener('click', closeSidebar);
 
         // Close on click outside sidebar
