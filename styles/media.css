@@ -265,6 +265,7 @@
 @media (max-width: 480px) {
     :root {
         --header-paddin-inline: 10px;
+        --button-font-size: 12px;
     }
 
     /*Header*/
@@ -300,6 +301,31 @@
         width: 100%;
         justify-content: space-between;
         padding-inline: 10px;
+    }
+    .catalog-filter-list__item-count {
+        font-size: 12px;
+    }
+    .catalog-filter-side-menu {
+        left: -100%;
+        width: 100%;
+        padding: 10px 10px 58px;
+    }
+    .catalog-filter-side-menu .fieldset__legend {
+        padding-inline-start: 24px;
+    }
+    .catalog-filter-list-wrapper {
+        padding-inline-start: 24px;
+    }
+    .catalog-filter-inline-list-wrapper {
+        padding-inline-start: 24px;
+    }
+    .catalog-filter-price {
+        padding-inline-start: 24px;
+    }
+    .catalog-filter-button {
+        position: fixed;
+        bottom: 5px;
+        width: calc(100% - 20px);
     }
     /*Catalog toolbar*/
 
@@ -347,5 +373,26 @@
         height: 10px;
     }
     /*Product popup*/
+
+    /*Forms*/
+    .checkbox__control {
+        --checkbox-width: 15px;
+    }
+    .checkbox__big-control {
+        --checkbox-big-width: 28px;
+    }
+    .checkbox__label {
+        font-size: 12px;
+    }
+    .radio__control {
+        --radio-width: 15px;
+    }
+    .radio__big-control {
+        --radio-big-width: 28px;
+    }
+    .radio__label {
+        font-size: 12px;
+    }
+    /*Forms*/
 
 }

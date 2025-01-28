@@ -41,6 +41,7 @@
     --header-border-width: 1px;
 
     --button-height: 60px;
+    --button-font-size: 17px;
 
     --footer-padding: 60px;
 
@@ -51,6 +52,13 @@
 
     --input-height: 52px;
     --input-inline-padding: 20px;
+
+    --checkbox-width: 18px;
+    --radio-width: 18px;
+
+    --checkbox-big-width: 34px;
+    --radio-big-width: 34px;
+
 
     --catalog-toolbar-height: 70px;
 
