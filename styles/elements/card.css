@@ -50,19 +50,19 @@
 .card-title {
     font-size: var(--card-title-font-size);
     color: var(--color-dark-3);
-    margin-bottom: 0.7em;
+    margin-bottom: clamp(9px, calc(12/var(--clamp-width)*100vw), 12px);
     font-weight: 400;
 }
 .card-descriptor {
     font-style: italic;
     font-size: var(--card-descriptor-font-size);
     color: var(--color-gray-1);
-    margin-bottom: 0.8em;
+    margin-bottom: clamp(9px, calc(12/var(--clamp-width)*100vw), 12px);
 }
 .card-price {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: clamp(10px, calc(12/var(--clamp-width)*100vw), 12px);
 }
 .card-price__value {
     font-size: var(--card-price-value-font-size);

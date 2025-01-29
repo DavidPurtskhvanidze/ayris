@@ -1,15 +1,15 @@
 .inspired-by {
-    padding: 100px 0;
+    padding-block: 100px;
 }
 .inspired-by-wrapper {
-    max-width: 1322px;
+    max-width: 1382px;
+    padding-inline: 30px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
     gap: 24px;
 }
 .inspired-by-banner {
-    aspect-ratio: 1 / 1.4;
     border: 1px solid var(--color-dark-1);
     border-radius: 100vw;
     position: relative;
@@ -29,14 +29,14 @@
 }
 .inspired-by-banner__info {
     position: absolute;
-    bottom: 124px;
+    bottom: clamp(32px, calc(124/var(--clamp-width)*100vw), 124px);
 }
 .inspired-by-banner__info-descriptor {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     font-style: italic;
-    font-size: 20px;
+    font-size: clamp(16px, calc(20/var(--clamp-width)*100vw), 20px);
     text-align: center;
     letter-spacing: 0.02em;
     line-height: 1.1;
@@ -47,33 +47,36 @@
     margin: auto;
     line-height: 1;
     font-weight: 400;
-    font-size: 89px;
+    font-size: clamp(29px, calc(89/var(--clamp-width)*100vw), 89px);
     text-align: center;
     letter-spacing: -0.05em;
     color: var(--color-light-1);
 }
 .inspired-by-info {
-    aspect-ratio: 1 / 1.4;
     border: 1px solid var(--color-dark-1);
     border-radius: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top: clamp(100px, calc(138/var(--clamp-width)*100vw), 138px);
+    padding-bottom: clamp(100px, calc(150/var(--clamp-width)*100vw), 150px);
 }
 .inspired-by-info__title {
     font-family: 'RoundhandWeb', serif;
     font-weight: 400;
-    font-size: 69px;
-    margin-bottom: 72px;
+    font-size: clamp(29px, calc(69/var(--clamp-width)*100vw), 69px);
+    margin-bottom: clamp(28px, calc(64/var(--clamp-width)*100vw), 64px);;
+    text-align: center;
 }
 .inspired-by-info__picture {
-    width: 200px;
-    height: 200px;
+    width: clamp(124px, calc(200/var(--clamp-width)*100vw), 200px);
+    height: clamp(124px, calc(200/var(--clamp-width)*100vw), 200px);
     border-radius: 100%;
     border: 1px solid var(--color-dark-1);
     overflow: hidden;
-    margin-bottom: 57px;
+    display: block;
+    margin-bottom: clamp(30px, calc(62/var(--clamp-width)*100vw), 62px);
 }
 .inspired-by-info__picture-imd {
     width: 100%;
@@ -84,7 +87,7 @@
     font-size: 15px;
     text-align: center;
     letter-spacing: 0.05em;
-    width: 45%;
+    width: 50%;
     margin: 0 auto 50px;
 }
 .button_inspired-by-info {

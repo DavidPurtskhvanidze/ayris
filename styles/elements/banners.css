@@ -40,7 +40,7 @@
     line-height: 1.2;
     color: var(--color-light-1);
     position: absolute;
-    top: calc(var(--page-banner-padding-block) - 0.3em);
+    top: var(--page-banner-padding-block);
     left: var(--page-banner-padding-inline);
 }
 .banner-title {

@@ -30,7 +30,7 @@
 .footer-main__list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: clamp(10px, calc(24/var(--clamp-width)*100vw), 24px);
 }
 .footer-main__item {
     line-height: 1;

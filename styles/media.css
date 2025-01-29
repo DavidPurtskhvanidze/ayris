@@ -1,5 +1,5 @@
 /*Desktop*/
-@media (max-width: 1280px) {
+@media (max-width: 1280px)  {
     .page-container {
         --page-container-width: 100%;
         padding-inline: 16px;
@@ -172,6 +172,33 @@
     }
     /*Banner with links*/
 
+    /*Inspired by*/
+    .inspired-by-wrapper {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding-inline: 0;
+    }
+    .inspired-by-banner__info-descriptor {
+        display: none;
+    }
+    .inspired-by-info__descriptor {
+        width: 90%;
+    }
+    .inspired-by-banner {
+        aspect-ratio: 1 / 1.5;
+        max-width: 63%;
+        margin: auto;
+    }
+    .inspired-by-info {
+        border: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .inspired-by-info__picture {
+        display: none;
+    }
+    /*Inspired by*/
+
     /*Catalog toolbar*/
     .catalog-toolbar {
         --catalog-toolbar-height: 40px;
@@ -230,10 +257,6 @@
     }
     .banners-wrapper-col-2 {
         gap: 2px;
-    }
-    .inspired-by-wrapper {
-        max-width: 90%;
-        grid-template-columns: repeat(1, 1fr);
     }
     div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
         margin-top: 2px;
