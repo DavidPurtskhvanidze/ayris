@@ -149,6 +149,14 @@
     /*menu-drop*/
     /*Header*/
 
+    /*Club form modal*/
+    .club-form-modal {
+        position: relative;
+        bottom: unset;
+        right: unset;
+        max-width: 370px;
+    }
+    /*Club form modal*/
 
     /*Banners*/
     .banners-wrapper-col-3 .banner-title {
