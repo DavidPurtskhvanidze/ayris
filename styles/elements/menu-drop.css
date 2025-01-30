@@ -71,6 +71,7 @@
     padding: 0;
     background-color: transparent;
     width: 100%;
+    color: var(--color-dark-3);
 }
 .mobile-drop-down-button:after {
     content: '';

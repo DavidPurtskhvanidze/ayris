@@ -26,6 +26,9 @@
         --page-banner-padding-block: 50px;
         --page-banner-padding-inline: 50px;
 
+        --button-font-size: 12px;
+        --button-height: 52px;
+
         --swiper-navigation-sides-offset: 10px;
     }
 
@@ -149,6 +152,13 @@
     /*menu-drop*/
     /*Header*/
 
+    /*Section button*/
+    .section-button-wrapper .button {
+        --button-height: 48px;
+        min-width: 246px;
+    }
+    /*Section button*/
+
     /*Club form modal*/
     .club-form-modal {
         position: relative;
@@ -205,6 +215,9 @@
     .inspired-by-info__picture {
         display: none;
     }
+    .button_inspired-by-info {
+        --button-height: 48px;
+    }
     /*Inspired by*/
 
     /*Catalog toolbar*/
@@ -224,6 +237,7 @@
     }
     .footer-info {
         order: 1;
+        align-items: end;
     }
     /*Footer*/
 }
@@ -248,15 +262,6 @@
     .card-grid__big-banner {
         grid-area: 2 / 1 / 3 / 3;
     }
-
-    /*Buttons*/
-    .button {
-        height: 45px;
-    }
-    .button-text {
-        font-size: 12px;
-    }
-    /*Buttons*/
 
     /*Banners*/
     .banners-wrapper-col-3 {
@@ -296,7 +301,6 @@
 @media (max-width: 480px) {
     :root {
         --header-paddin-inline: 10px;
-        --button-font-size: 12px;
     }
 
     /*Header*/

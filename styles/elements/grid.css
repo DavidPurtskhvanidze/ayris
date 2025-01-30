@@ -1,15 +1,108 @@
+.grid-col-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    align-items: start;
+}
 .grid-col-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+    align-items: start;
 }
 .grid-col-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
+    align-items: start;
 }
 .grid-col-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+    align-items: start;
+}
+
+/*Tablet*/
+@media (max-width: 1023px) {
+    .grid-col-md-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-md-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-md-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-md-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+    .grid-col-sm-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-sm-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-sm-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-sm-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
+}
+
+/*Mobile S*/
+@media (max-width: 480px) {
+    .grid-col-xs-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-xs-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-xs-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
+    .grid-col-xs-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        align-items: start;
+    }
 }

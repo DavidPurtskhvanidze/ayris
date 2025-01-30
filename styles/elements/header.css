@@ -87,6 +87,8 @@
     padding: 0;
     text-align: start;
     position: relative;
+    cursor: pointer;
+    color: var(--color-dark-3);
 }
 .header-menu__list {
     display: flex;
