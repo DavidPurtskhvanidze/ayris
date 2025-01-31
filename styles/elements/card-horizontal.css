@@ -1,6 +1,6 @@
 .card-horizontal {
     display: flex;
-    gap: 24px;
+    gap: clamp(10px, calc(24/var(--clamp-width)*100vw), 24px);
 }
 .card-horizontal-start {
     position: relative;

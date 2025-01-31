@@ -294,8 +294,8 @@
     <h1 class="page-title">
       Корзина
     </h1>
-    <button data-fancybox data-src="#fn">Открыть модальное окно</button>
-    <button data-fancybox data-src="#dialog-content-2">2Открыть модальное окно</button>
+<!--    <button data-fancybox data-src="#fn">Открыть модальное окно</button>-->
+<!--    <button data-fancybox data-src="#dialog-content-2">2Открыть модальное окно</button>-->
 
     <section class="basket-wrapper">
       <div class="basket">
@@ -413,23 +413,24 @@
               <input class="input-field" type="text" id="basketCity" placeholder="" required="" />
               <label class="input-label" for="basketCity">Город</label>
             </div>
-            <label class="checkbox" for="basketCourier">
-              <input class="checkbox__input" type="checkbox" id="basketCourier" name="type" value="">
-              <span class="checkbox__control"></span>
-              <span class="checkbox__label">Курьер – Бесплатно (1-2 дня)</span>
+            <label class="radio" for="basketCourier">
+              <input class="radio__input" type="radio" id="basketCourier" name="type1" value="">
+              <span class="radio__control"></span>
+              <span class="radio__label">Курьер – Бесплатно (1-2 дня)</span>
             </label>
-            <label class="checkbox" for="basketPickUpPoint">
-              <input class="checkbox__input" type="checkbox" id="basketPickUpPoint" name="type" value="">
-              <span class="checkbox__control"></span>
-              <span class="checkbox__label">Пункт выдачи СДЕК – Бесплатно (2-4 дня)</span>
+            <label class="radio" for="basketPickUpPoint">
+              <input class="radio__input" type="radio" id="basketPickUpPoint" name="type1" value="">
+              <span class="radio__control"></span>
+              <span class="radio__label">Пункт выдачи СДЕК – Бесплатно (2-4 дня)</span>
             </label>
+
           </fieldset>
 
           <fieldset class="fieldset">
             <!--fieldset legend-->
             <legend class="fieldset__legend">Адрес доставки</legend>
 
-            <div class="grid-col-3">
+            <div class="grid-col-3 grid-col-sm-1 gap">
               <div class="input-container">
                 <input class="input-field" type="text" id="basketStreet" placeholder="" required="" />
                 <label class="input-label" for="basketStreet">Улица</label>

@@ -232,7 +232,7 @@ fieldset {
     height: var(--input-height);
     width: 100%;
     padding: calc(var(--input-height) / 2.2) var(--input-inline-padding) 6px;
-    font-size: 16px;
+    font-size: clamp(15px, calc(16/var(--clamp-width)*100vw), 16px);
     outline: none;
     background: none;
     border: none;
@@ -248,7 +248,7 @@ fieldset {
     transform: translateY(-50%);
     left: var(--input-inline-padding);
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(15px, calc(16/var(--clamp-width)*100vw), 16px);
     line-height: 1;
     color: var(--color-gray-1);
     pointer-events: none;
@@ -314,7 +314,7 @@ textarea {
     background-color: transparent;
     border: 1px solid var(--color-dark-3);
     padding: var(--input-inline-padding);
-    font-size: 16px;
+    font-size: clamp(15px, calc(16/var(--clamp-width)*100vw), 16px);
     color: var(--color-dark-2);
     outline: none;
     resize: none;
@@ -325,7 +325,7 @@ textarea {
     position: relative;
     display: flex;
     align-items: center;
-    height: 37px;
+    height: clamp(29px, calc(37/var(--clamp-width)*100vw), 37px);
     max-width: 100px;
     background-color: transparent;
     border: 1px solid var(--color-dark-3);
@@ -338,8 +338,8 @@ textarea {
     cursor: pointer;
     background-color: transparent;
     padding: 0;
-    height: 37px;
-    width: 37px;
+    height: clamp(29px, calc(37/var(--clamp-width)*100vw), 37px);
+    width: clamp(29px, calc(37/var(--clamp-width)*100vw), 37px);
 }
 .input-count__decrease-button:after {
     content: '';
@@ -348,7 +348,7 @@ textarea {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 14px;
+    width: clamp(10px, calc(14/var(--clamp-width)*100vw), 14px);
     height: 2px;
 }
 .input-count__increase-button {
@@ -359,8 +359,8 @@ textarea {
     cursor: pointer;
     background-color: transparent;
     padding: 0;
-    height: 37px;
-    width: 37px;
+    height: clamp(29px, calc(37/var(--clamp-width)*100vw), 37px);
+    width: clamp(29px, calc(37/var(--clamp-width)*100vw), 37px);
 }
 .input-count__increase-button:after {
     content: '';
@@ -369,17 +369,17 @@ textarea {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 14px;
-    height: 13px;
+    width: clamp(10px, calc(14/var(--clamp-width)*100vw), 14px);
+    height: clamp(9px, calc(13/var(--clamp-width)*100vw), 13px);
 }
 .input-count__field {
-    width: 40px;
+    width: clamp(30px, calc(40/var(--clamp-width)*100vw), 40px);
     border: none;
     pointer-events: none;
     background-color: transparent;
     padding: 0;
     cursor: default;
-    font-size: 20px;
+    font-size: clamp(14px, calc(20/var(--clamp-width)*100vw), 20px);
     line-height: 1;
     text-align: center;
     letter-spacing: 0.01em;
