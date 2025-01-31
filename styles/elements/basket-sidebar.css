@@ -33,7 +33,7 @@
 }
 .cart-sidebar_head-title {
     font-style: italic;
-    font-size: 14px;
+    font-size: clamp(11px, calc(14/var(--clamp-width)*100vw), 14px);
     line-height: 1;
     letter-spacing: 0.08em;
     color: var(--color-dark-3);
@@ -100,7 +100,7 @@
 }
 .cart-sidebar-suggestions_title {
     font-weight: 400;
-    font-size: 17px;
+    font-size: clamp(14px, calc(17/var(--clamp-width)*100vw), 17px);
     line-height: 1;
     text-align: center;
     letter-spacing: 0.01em;

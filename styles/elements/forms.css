@@ -12,7 +12,7 @@ fieldset {
 }
 .fieldset__legend {
     padding: 0;
-    font-size: 16px;
+    font-size: clamp(15px, calc(16/var(--clamp-width)*100vw), 16px);
     line-height: 1.2;
     color: var(--color-dark-3);
     margin-bottom: 20px;

@@ -169,11 +169,11 @@
     /*Club form modal*/
 
     /*Banners*/
-    .banners-wrapper-col-3 .banner-title {
+    .grid-col-3 .banner-title {
         --page-banner-padding-block: 40px;
         --page-banner-padding-inline: 40px;
     }
-    .banners-wrapper-col-3 .banner-descriptor {
+    .grid-col-3 .banner-descriptor {
         --page-banner-padding-block: 40px;
         --page-banner-padding-inline: 40px;
     }
@@ -248,6 +248,7 @@
         --page-banner-padding-block: clamp(20px, calc(50/var(--clamp-width)*100vw), 50px);
         --page-banner-padding-inline: clamp(10px, calc(50/var(--clamp-width)*100vw), 50px);
         --footer-padding: 10px;
+        --gap: 2px;
     }
 
     .main-page-top-banner {
@@ -255,7 +256,7 @@
     }
 
     .card-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0,1fr));
         gap: 2px;
     }
 
@@ -264,16 +265,6 @@
     }
 
     /*Banners*/
-    .banners-wrapper-col-3 {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2px;
-    }
-    .banners-wrapper-col-2 {
-        gap: 2px;
-    }
-    div[class*="banners-wrapper-col"] + div[class*="banners-wrapper-col"] {
-        margin-top: 2px;
-    }
     .cards-block {
         gap: 2px;
     }
@@ -364,6 +355,30 @@
     }
     /*Catalog toolbar*/
 
+    /*Cart preorder*/
+    .cart-sidebar {
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+    }
+    .cart-sidebar-card_list-item .card-horizontal-start {
+        width: 114px;
+    }
+    .cart-sidebar-card_list-item .card-horizontal {
+        gap: 8px;
+    }
+    .cart-sidebar-suggestions {
+        margin: auto -10px;
+    }
+    .cart-sidebar-suggestions_slider {
+        padding: 0;
+    }
+    .cart-sidebar-suggestions {
+        --swiper-navigation-sides-offset: 4px;
+    }
+    /*Cart preorder*/
+
     /*Product popup*/
     .product-popup {
         bottom: 14px;
@@ -408,6 +423,19 @@
         height: 10px;
     }
     /*Product popup*/
+
+    /*Card*/
+    .card-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card-descriptor {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    /*Card*/
 
     /*Forms*/
     .checkbox__control {
