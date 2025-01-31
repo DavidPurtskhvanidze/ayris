@@ -456,6 +456,15 @@
     }
     /*Card*/
 
+    /*Cards button block*/
+    .cards-button-block .card-top {
+        aspect-ratio: 1 / 1.4;
+    }
+    .cards-button-block {
+        padding-top: 10px;
+    }
+    /*Cards button block*/
+
     /*Forms*/
     .checkbox__control {
         --checkbox-width: 15px;

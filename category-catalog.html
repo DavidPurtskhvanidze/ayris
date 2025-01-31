@@ -326,206 +326,11 @@
   </section>
 
   <!--catalog-toolbar-->
-  <nav class="catalog-toolbar">
+  <nav class="catalog-toolbar catalog-toolbar_sticky-top">
     <div class="catalog-filter-wrapper">
       <button type="button" data-sidebar-open-button="catalogFilter" class="catalog-filter__button">
         Фильтры
       </button>
-      <div data-sidebar-box="catalogFilter" class="catalog-filter-side-menu">
-        <div class="catalog-filter-side-menu__head">
-          <button type="reset" class="catalog-filter-reset-button">
-            Отменить выбор
-          </button>
-          <button type="button" data-sidebar-close-button="catalogFilter" class="button-close-dark"></button>
-        </div>
-        <form action="">
-
-          <!--fieldset-->
-          <fieldset class="fieldset">
-
-            <!--fieldset legend-->
-            <legend class="fieldset__legend fieldset__legend_border-top">Типы одежды</legend>
-
-            <div class="catalog-filter-list-wrapper">
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type1">
-                  <input class="checkbox__input" type="checkbox" id="type1" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Комбинации</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>8</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type2">
-                  <input class="checkbox__input" type="checkbox" id="type2" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Топы</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type3">
-                  <input class="checkbox__input" type="checkbox" id="type3" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Сорочки</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type4">
-                  <input class="checkbox__input" type="checkbox" id="type4" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Маски для сна</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type5">
-                  <input class="checkbox__input" type="checkbox" id="type5" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Маски для сна 2</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type6">
-                  <input class="checkbox__input" type="checkbox" id="type6" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Маски для сна</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-            </div>
-
-          </fieldset>
-          <!--fieldset-->
-
-
-          <!--fieldset-->
-          <fieldset class="fieldset">
-
-            <!--fieldset legend-->
-            <legend class="fieldset__legend fieldset__legend_border-top">Размер</legend>
-
-            <div class="catalog-filter-inline-list-wrapper">
-              <label class="checkbox" for="size1" title="Size S">
-                <input class="checkbox__input" type="checkbox" id="size1" name="type" value="xs" />
-                <span class="checkbox__big-control">
-                  xs
-                </span>
-              </label>
-              <label class="checkbox" for="size2" title="Size M">
-                <input class="checkbox__input" type="checkbox" id="size2" name="type" value="s" />
-                <span class="checkbox__big-control">
-                  s
-                </span>
-              </label>
-              <label class="checkbox" for="size3" title="Size M">
-                <input class="checkbox__input" type="checkbox" id="size3" name="type" value="m" />
-                <span class="checkbox__big-control">
-                  m
-                </span>
-              </label>
-            </div>
-
-          </fieldset>
-          <!--fieldset-->
-
-
-          <!--fieldset-->
-          <fieldset class="fieldset">
-
-            <!--fieldset legend-->
-            <legend class="fieldset__legend fieldset__legend_border-top">Цвет</legend>
-
-            <div class="catalog-filter-list-wrapper">
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="color1">
-                  <input class="checkbox__input" type="checkbox" id="color1" name="type" value="Marie Antoinette" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__color-label" style="background-color: #DDA499;"></span>
-                  <span class="checkbox__label"><i>Marie Antoinette</i></span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>8</span>)
-                </div>
-              </div>
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="color2">
-                  <input class="checkbox__input" type="checkbox" id="color2" name="type" value="Air Blue" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__color-label" style="background-color: #ACCAE1;"></span>
-                  <span class="checkbox__label"><i>Air Blue</i></span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>8</span>)
-                </div>
-              </div>
-            </div>
-
-          </fieldset>
-          <!--fieldset-->
-
-
-          <!--fieldset-->
-          <fieldset class="fieldset">
-
-            <!--fieldset legend-->
-            <legend class="fieldset__legend fieldset__legend_border-top">Цена</legend>
-
-            <div class="catalog-filter-price">
-              <div class="catalog-price-inputs">
-                <div class="catalog-price-input-wrapper">
-                  <input type="number" id="priceInputMin" min="0" max="65000" value="0" step="10">
-                </div>
-                <div class="catalog-price-inputs__divider"></div>
-                <div class="catalog-price-input-wrapper">
-                  <input type="number" id="priceInputMax" min="0" max="65000" value="65000" step="10">
-                </div>
-              </div>
-              <div class="catalog-range-slider">
-                <div class="catalog-range-slider__track"></div>
-                <div class="fn-catalog-range catalog-range-slider__range"></div>
-                <input type="range" id="priceRangeMin" min="0" max="65000" value="0" step="10">
-                <input type="range" id="priceRangeMax" min="0" max="65000" value="65000" step="10">
-              </div>
-              <div class="catalog-price-labels">
-                <span id="priceMinLabel"></span>
-                <span id="priceMaxLabel"></span>
-              </div>
-            </div>
-
-          </fieldset>
-          <!--fieldset-->
-
-          <div class="catalog-filter-buttons-wrapper">
-            <button type="reset" class="catalog-filter-reset-button">
-              Отменить выбор
-            </button>
-            <button class="button button_gray catalog-filter-button" type="button">
-              <span class="uppercase">Показать варианты </span>(<span>100</span>)
-            </button>
-          </div>
-        </form>
-      </div>
-      <div data-sidebar-overlay="catalogFilter" class="page-overlay"></div>
     </div>
     <div class="catalog-sort-wrapper">
       <div class="fn-dropdown dropdown">
@@ -541,6 +346,203 @@
       </div>
     </div>
   </nav>
+  <!--catalog filter side menu-->
+  <div data-sidebar-box="catalogFilter" class="catalog-filter-side-menu">
+    <div class="catalog-filter-side-menu__head">
+      <button type="reset" class="catalog-filter-reset-button">
+        Отменить выбор
+      </button>
+      <button type="button" data-sidebar-close-button="catalogFilter" class="button-close-dark"></button>
+    </div>
+    <form action="">
+
+      <!--fieldset-->
+      <fieldset class="fieldset">
+
+        <!--fieldset legend-->
+        <legend class="fieldset__legend fieldset__legend_border-top">Типы одежды</legend>
+
+        <div class="catalog-filter-list-wrapper">
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type1">
+              <input class="checkbox__input" type="checkbox" id="type1" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Комбинации</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>8</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type2">
+              <input class="checkbox__input" type="checkbox" id="type2" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Топы</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type3">
+              <input class="checkbox__input" type="checkbox" id="type3" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Сорочки</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type4">
+              <input class="checkbox__input" type="checkbox" id="type4" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Маски для сна</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type5">
+              <input class="checkbox__input" type="checkbox" id="type5" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Маски для сна 2</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type6">
+              <input class="checkbox__input" type="checkbox" id="type6" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Маски для сна</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+        </div>
+
+      </fieldset>
+      <!--fieldset-->
+
+
+      <!--fieldset-->
+      <fieldset class="fieldset">
+
+        <!--fieldset legend-->
+        <legend class="fieldset__legend fieldset__legend_border-top">Размер</legend>
+
+        <div class="catalog-filter-inline-list-wrapper">
+          <label class="checkbox" for="size1" title="Size S">
+            <input class="checkbox__input" type="checkbox" id="size1" name="type" value="xs" />
+            <span class="checkbox__big-control">
+                  xs
+                </span>
+          </label>
+          <label class="checkbox" for="size2" title="Size M">
+            <input class="checkbox__input" type="checkbox" id="size2" name="type" value="s" />
+            <span class="checkbox__big-control">
+                  s
+                </span>
+          </label>
+          <label class="checkbox" for="size3" title="Size M">
+            <input class="checkbox__input" type="checkbox" id="size3" name="type" value="m" />
+            <span class="checkbox__big-control">
+                  m
+                </span>
+          </label>
+        </div>
+
+      </fieldset>
+      <!--fieldset-->
+
+
+      <!--fieldset-->
+      <fieldset class="fieldset">
+
+        <!--fieldset legend-->
+        <legend class="fieldset__legend fieldset__legend_border-top">Цвет</legend>
+
+        <div class="catalog-filter-list-wrapper">
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="color1">
+              <input class="checkbox__input" type="checkbox" id="color1" name="type" value="Marie Antoinette" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__color-label" style="background-color: #DDA499;"></span>
+              <span class="checkbox__label"><i>Marie Antoinette</i></span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>8</span>)
+            </div>
+          </div>
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="color2">
+              <input class="checkbox__input" type="checkbox" id="color2" name="type" value="Air Blue" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__color-label" style="background-color: #ACCAE1;"></span>
+              <span class="checkbox__label"><i>Air Blue</i></span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>8</span>)
+            </div>
+          </div>
+        </div>
+
+      </fieldset>
+      <!--fieldset-->
+
+
+      <!--fieldset-->
+      <fieldset class="fieldset">
+
+        <!--fieldset legend-->
+        <legend class="fieldset__legend fieldset__legend_border-top">Цена</legend>
+
+        <div class="catalog-filter-price">
+          <div class="catalog-price-inputs">
+            <div class="catalog-price-input-wrapper">
+              <input type="number" id="priceInputMin" min="0" max="65000" value="0" step="10">
+            </div>
+            <div class="catalog-price-inputs__divider"></div>
+            <div class="catalog-price-input-wrapper">
+              <input type="number" id="priceInputMax" min="0" max="65000" value="65000" step="10">
+            </div>
+          </div>
+          <div class="catalog-range-slider">
+            <div class="catalog-range-slider__track"></div>
+            <div class="fn-catalog-range catalog-range-slider__range"></div>
+            <input type="range" id="priceRangeMin" min="0" max="65000" value="0" step="10">
+            <input type="range" id="priceRangeMax" min="0" max="65000" value="65000" step="10">
+          </div>
+          <div class="catalog-price-labels">
+            <span id="priceMinLabel"></span>
+            <span id="priceMaxLabel"></span>
+          </div>
+        </div>
+
+      </fieldset>
+      <!--fieldset-->
+
+      <div class="catalog-filter-buttons-wrapper">
+        <button type="reset" class="catalog-filter-reset-button">
+          Отменить выбор
+        </button>
+        <button class="button button_gray catalog-filter-button" type="button">
+          <span class="uppercase">Показать варианты </span>(<span>100</span>)
+        </button>
+      </div>
+    </form>
+  </div>
+  <div data-sidebar-overlay="catalogFilter" class="page-overlay"></div>
+  <!--catalog filter side menu-->
   <!--catalog-toolbar-->
 
   <section>

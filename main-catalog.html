@@ -5,6 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Main Catalog</title>
 </head>
@@ -337,210 +338,11 @@
   </section>
 
   <!--catalog-toolbar-->
-  <nav class="catalog-toolbar">
+  <nav class="catalog-toolbar catalog-toolbar_sticky-top">
     <div class="catalog-filter-wrapper">
-      <button type="button" class="fn-open-sidebar catalog-filter__button">
+      <button type="button" data-sidebar-open-button="catalogFilter" class="catalog-filter__button">
         Фильтры
       </button>
-      <div class="fn-sidebar catalog-filter-side-menu">
-        <div class="catalog-filter-side-menu__head">
-          <button type="reset" class="catalog-filter-reset-button">
-            Отменить выбор
-          </button>
-          <button type="button" class="fn-close-sidebar catalog-filter-close">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 0C13.9629 0 18 4.03714 18 9C18 13.9629 13.9629 18 9 18C4.03714 18 0 13.9629 0 9C0 4.03714 4.03714 0 9 0ZM9 16.7143C13.2533 16.7143 16.7143 13.2542 16.7143 9C16.7143 4.74665 13.2533 1.28571 9 1.28571C4.74665 1.28571 1.28572 4.74665 1.28572 9C1.28572 13.2542 4.74665 16.7143 9 16.7143ZM5.36379 6.27264L8.09115 9L5.36379 11.7274C5.23843 11.8527 5.17576 12.0175 5.17576 12.1822C5.17576 12.3469 5.23844 12.5108 5.36379 12.637C5.48915 12.7623 5.65389 12.825 5.81861 12.825C5.98334 12.825 6.14728 12.7623 6.27342 12.637L8.99996 9.9088L11.7273 12.6362C11.8527 12.7615 12.0174 12.8242 12.1821 12.8242C12.3468 12.8242 12.5108 12.7615 12.6369 12.6362C12.7623 12.5108 12.825 12.3461 12.825 12.1814C12.825 12.0166 12.7623 11.8527 12.6369 11.7265L9.90959 8.99918L12.6369 6.27182C12.7623 6.14646 12.825 5.98172 12.825 5.817C12.825 5.65227 12.7623 5.48833 12.6369 5.36219C12.3862 5.11147 11.9788 5.11147 11.7281 5.36219L8.99992 8.0912L6.27256 5.36384C6.02183 5.11311 5.61444 5.11311 5.36371 5.36384C5.23835 5.48919 5.17568 5.65393 5.17568 5.81865C5.17487 5.98258 5.23763 6.1473 5.36379 6.27264Z" fill="#4B4947"/>
-            </svg>
-          </button>
-        </div>
-        <form action="">
-
-          <!--fieldset-->
-          <fieldset class="fieldset">
-
-            <!--fieldset legend-->
-            <legend class="fieldset__legend fieldset__legend_border-top">Типы одежды</legend>
-
-            <div class="catalog-filter-list-wrapper">
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type1">
-                  <input class="checkbox__input" type="checkbox" id="type1" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Комбинации</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>8</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type2">
-                  <input class="checkbox__input" type="checkbox" id="type2" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Топы</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type3">
-                  <input class="checkbox__input" type="checkbox" id="type3" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Сорочки</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type4">
-                  <input class="checkbox__input" type="checkbox" id="type4" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Маски для сна</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type5">
-                  <input class="checkbox__input" type="checkbox" id="type5" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Маски для сна 2</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="type6">
-                  <input class="checkbox__input" type="checkbox" id="type6" name="type" value="Комбинации" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__label">Маски для сна</span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>10</span>)
-                </div>
-              </div>
-            </div>
-
-          </fieldset>
-          <!--fieldset-->
-
-
-          <!--fieldset-->
-          <fieldset class="fieldset">
-
-            <!--fieldset legend-->
-            <legend class="fieldset__legend fieldset__legend_border-top">Размер</legend>
-
-            <div class="catalog-filter-inline-list-wrapper">
-              <label class="checkbox" for="size1" title="Size S">
-                <input class="checkbox__input" type="checkbox" id="size1" name="type" value="xs" />
-                <span class="checkbox__big-control">
-                  xs
-                </span>
-              </label>
-              <label class="checkbox" for="size2" title="Size M">
-                <input class="checkbox__input" type="checkbox" id="size2" name="type" value="s" />
-                <span class="checkbox__big-control">
-                  s
-                </span>
-              </label>
-              <label class="checkbox" for="size3" title="Size M">
-                <input class="checkbox__input" type="checkbox" id="size3" name="type" value="m" />
-                <span class="checkbox__big-control">
-                  m
-                </span>
-              </label>
-            </div>
-
-          </fieldset>
-          <!--fieldset-->
-
-
-          <!--fieldset-->
-          <fieldset class="fieldset">
-
-            <!--fieldset legend-->
-            <legend class="fieldset__legend fieldset__legend_border-top">Цвет</legend>
-
-            <div class="catalog-filter-list-wrapper">
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="color1">
-                  <input class="checkbox__input" type="checkbox" id="color1" name="type" value="Marie Antoinette" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__color-label" style="background-color: #DDA499;"></span>
-                  <span class="checkbox__label"><i>Marie Antoinette</i></span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>8</span>)
-                </div>
-              </div>
-              <div class="catalog-filter-list__item">
-                <label class="checkbox" for="color2">
-                  <input class="checkbox__input" type="checkbox" id="color2" name="type" value="Air Blue" />
-                  <span class="checkbox__control"></span>
-                  <span class="checkbox__color-label" style="background-color: #ACCAE1;"></span>
-                  <span class="checkbox__label"><i>Air Blue</i></span>
-                </label>
-                <div class="catalog-filter-list__item-count">
-                  (<span>8</span>)
-                </div>
-              </div>
-            </div>
-
-          </fieldset>
-          <!--fieldset-->
-
-
-          <!--fieldset-->
-          <fieldset class="fieldset">
-
-            <!--fieldset legend-->
-            <legend class="fieldset__legend fieldset__legend_border-top">Цена</legend>
-
-            <div class="catalog-filter-price">
-              <div class="catalog-price-inputs">
-                <div class="catalog-price-input-wrapper">
-                  <input type="number" id="priceInputMin" min="0" max="65000" value="0" step="10">
-                </div>
-                <div class="catalog-price-inputs__divider"></div>
-                <div class="catalog-price-input-wrapper">
-                  <input type="number" id="priceInputMax" min="0" max="65000" value="65000" step="10">
-                </div>
-              </div>
-              <div class="catalog-range-slider">
-                <div class="catalog-range-slider__track"></div>
-                <div class="fn-catalog-range catalog-range-slider__range"></div>
-                <input type="range" id="priceRangeMin" min="0" max="65000" value="0" step="10">
-                <input type="range" id="priceRangeMax" min="0" max="65000" value="65000" step="10">
-              </div>
-              <div class="catalog-price-labels">
-                <span id="priceMinLabel"></span>
-                <span id="priceMaxLabel"></span>
-              </div>
-            </div>
-
-          </fieldset>
-          <!--fieldset-->
-
-          <div class="catalog-filter-buttons-wrapper">
-            <button type="reset" class="catalog-filter-reset-button">
-              Отменить выбор
-            </button>
-            <button class="button button_gray" type="button">
-              <span class="uppercase">Показать варианты </span>(<span>100</span>)
-            </button>
-          </div>
-        </form>
-      </div>
-      <div class="fn-overlay page-overlay"></div>
     </div>
     <div class="catalog-sort-wrapper">
       <div class="fn-dropdown dropdown">
@@ -556,6 +358,203 @@
       </div>
     </div>
   </nav>
+  <!--catalog filter side menu-->
+  <div data-sidebar-box="catalogFilter" class="catalog-filter-side-menu">
+    <div class="catalog-filter-side-menu__head">
+      <button type="reset" class="catalog-filter-reset-button">
+        Отменить выбор
+      </button>
+      <button type="button" data-sidebar-close-button="catalogFilter" class="button-close-dark"></button>
+    </div>
+    <form action="">
+
+      <!--fieldset-->
+      <fieldset class="fieldset">
+
+        <!--fieldset legend-->
+        <legend class="fieldset__legend fieldset__legend_border-top">Типы одежды</legend>
+
+        <div class="catalog-filter-list-wrapper">
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type1">
+              <input class="checkbox__input" type="checkbox" id="type1" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Комбинации</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>8</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type2">
+              <input class="checkbox__input" type="checkbox" id="type2" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Топы</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type3">
+              <input class="checkbox__input" type="checkbox" id="type3" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Сорочки</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type4">
+              <input class="checkbox__input" type="checkbox" id="type4" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Маски для сна</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type5">
+              <input class="checkbox__input" type="checkbox" id="type5" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Маски для сна 2</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="type6">
+              <input class="checkbox__input" type="checkbox" id="type6" name="type" value="Комбинации" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__label">Маски для сна</span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>10</span>)
+            </div>
+          </div>
+        </div>
+
+      </fieldset>
+      <!--fieldset-->
+
+
+      <!--fieldset-->
+      <fieldset class="fieldset">
+
+        <!--fieldset legend-->
+        <legend class="fieldset__legend fieldset__legend_border-top">Размер</legend>
+
+        <div class="catalog-filter-inline-list-wrapper">
+          <label class="checkbox" for="size1" title="Size S">
+            <input class="checkbox__input" type="checkbox" id="size1" name="type" value="xs" />
+            <span class="checkbox__big-control">
+                  xs
+                </span>
+          </label>
+          <label class="checkbox" for="size2" title="Size M">
+            <input class="checkbox__input" type="checkbox" id="size2" name="type" value="s" />
+            <span class="checkbox__big-control">
+                  s
+                </span>
+          </label>
+          <label class="checkbox" for="size3" title="Size M">
+            <input class="checkbox__input" type="checkbox" id="size3" name="type" value="m" />
+            <span class="checkbox__big-control">
+                  m
+                </span>
+          </label>
+        </div>
+
+      </fieldset>
+      <!--fieldset-->
+
+
+      <!--fieldset-->
+      <fieldset class="fieldset">
+
+        <!--fieldset legend-->
+        <legend class="fieldset__legend fieldset__legend_border-top">Цвет</legend>
+
+        <div class="catalog-filter-list-wrapper">
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="color1">
+              <input class="checkbox__input" type="checkbox" id="color1" name="type" value="Marie Antoinette" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__color-label" style="background-color: #DDA499;"></span>
+              <span class="checkbox__label"><i>Marie Antoinette</i></span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>8</span>)
+            </div>
+          </div>
+          <div class="catalog-filter-list__item">
+            <label class="checkbox" for="color2">
+              <input class="checkbox__input" type="checkbox" id="color2" name="type" value="Air Blue" />
+              <span class="checkbox__control"></span>
+              <span class="checkbox__color-label" style="background-color: #ACCAE1;"></span>
+              <span class="checkbox__label"><i>Air Blue</i></span>
+            </label>
+            <div class="catalog-filter-list__item-count">
+              (<span>8</span>)
+            </div>
+          </div>
+        </div>
+
+      </fieldset>
+      <!--fieldset-->
+
+
+      <!--fieldset-->
+      <fieldset class="fieldset">
+
+        <!--fieldset legend-->
+        <legend class="fieldset__legend fieldset__legend_border-top">Цена</legend>
+
+        <div class="catalog-filter-price">
+          <div class="catalog-price-inputs">
+            <div class="catalog-price-input-wrapper">
+              <input type="number" id="priceInputMin" min="0" max="65000" value="0" step="10">
+            </div>
+            <div class="catalog-price-inputs__divider"></div>
+            <div class="catalog-price-input-wrapper">
+              <input type="number" id="priceInputMax" min="0" max="65000" value="65000" step="10">
+            </div>
+          </div>
+          <div class="catalog-range-slider">
+            <div class="catalog-range-slider__track"></div>
+            <div class="fn-catalog-range catalog-range-slider__range"></div>
+            <input type="range" id="priceRangeMin" min="0" max="65000" value="0" step="10">
+            <input type="range" id="priceRangeMax" min="0" max="65000" value="65000" step="10">
+          </div>
+          <div class="catalog-price-labels">
+            <span id="priceMinLabel"></span>
+            <span id="priceMaxLabel"></span>
+          </div>
+        </div>
+
+      </fieldset>
+      <!--fieldset-->
+
+      <div class="catalog-filter-buttons-wrapper">
+        <button type="reset" class="catalog-filter-reset-button">
+          Отменить выбор
+        </button>
+        <button class="button button_gray catalog-filter-button" type="button">
+          <span class="uppercase">Показать варианты </span>(<span>100</span>)
+        </button>
+      </div>
+    </form>
+  </div>
+  <div data-sidebar-overlay="catalogFilter" class="page-overlay"></div>
+  <!--catalog filter side menu-->
   <!--catalog-toolbar-->
 
   <section>
@@ -675,7 +674,7 @@
     </div>
   </section>
 
-  <section class="grid-col-2 gap">
+  <section class="grid-col-2 grid-col-sm-1 gap">
     <article class="banner">
       <picture class="banner-bg-picture">
         <source srcset="images/pictures/banner9.webp" type="image/webp">
@@ -694,51 +693,59 @@
       </a>
     </article>
     <div class="cards-button-block">
-      <div class="cards-block">
-        <div class="card">
-          <div class="card-top">
-            <picture class="card-top__picture">
-              <source srcset="images/pictures/card1.webp" type="image/webp">
-              <source srcset="images/pictures/card1.jpg" type="image/jpeg">
-              <img class="card-top__picture-img" src="images/pictures/card1.jpg" alt="Card">
-            </picture>
+      <div id="cardsButtonBlockSlider" class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-top">
+                <picture class="card-top__picture">
+                  <source srcset="images/pictures/card1.webp" type="image/webp">
+                  <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+                  <img class="card-top__picture-img" src="images/pictures/card1.jpg" alt="Card">
+                </picture>
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title">
+                  Сарафан Voyage: Сote d’Asur Сарафан Voyage: Сote d’Asur
+                  Сарафан Voyage: Сote d’Asur Сарафан Voyage: Сote d’Asur
+                  Сарафан Voyage: Сote d’Asur
+                </h4>
+                <p class="card-descriptor">
+                  100% шелк с хлопком
+                </p>
+                <div class="card-price">
+                  <span class="card-price__value">68.000 ₽</span>
+                  <span class="card-price__value_old">70.000 ₽</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-bottom">
-            <h4 class="card-title">
-              Сарафан Voyage: Сote d’Asur Сарафан Voyage: Сote d’Asur
-              Сарафан Voyage: Сote d’Asur Сарафан Voyage: Сote d’Asur
-              Сарафан Voyage: Сote d’Asur
-            </h4>
-            <p class="card-descriptor">
-              100% шелк с хлопком
-            </p>
-            <div class="card-price">
-              <span class="card-price__value">68.000 ₽</span>
-              <span class="card-price__value_old">70.000 ₽</span>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-top">
+                <picture class="card-top__picture">
+                  <source srcset="images/pictures/card1.webp" type="image/webp">
+                  <source srcset="images/pictures/card1.jpg" type="image/jpeg">
+                  <img class="card-top__picture-img" src="images/pictures/card1.jpg" alt="Card">
+                </picture>
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title">
+                  Сарафан Voyage: Сote d’Asur
+                </h4>
+                <p class="card-descriptor">
+                  100% шелк с хлопком
+                </p>
+                <div class="card-price">
+                  <span class="card-price__value">68.000 ₽</span>
+                  <span class="card-price__value_old">70.000 ₽</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-top">
-            <picture class="card-top__picture">
-              <source srcset="images/pictures/card1.webp" type="image/webp">
-              <source srcset="images/pictures/card1.jpg" type="image/jpeg">
-              <img class="card-top__picture-img" src="images/pictures/card1.jpg" alt="Card">
-            </picture>
-          </div>
-          <div class="card-bottom">
-            <h4 class="card-title">
-              Сарафан Voyage: Сote d’Asur
-            </h4>
-            <p class="card-descriptor">
-              100% шелк с хлопком
-            </p>
-            <div class="card-price">
-              <span class="card-price__value">68.000 ₽</span>
-              <span class="card-price__value_old">70.000 ₽</span>
-            </div>
-          </div>
-        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
       <div class="button-block">
         <button type="button" class="button">
@@ -1116,7 +1123,7 @@
     </div>
   </section>
 
-  <section class="banners-wrapper_margin-bottom">
+  <section class="grid-col-2 grid-col-sm-1 gap banners-wrapper_margin-bottom">
     <article class="banner">
       <picture class="banner-bg-picture">
         <source srcset="images/pictures/banner11.webp" type="image/webp">

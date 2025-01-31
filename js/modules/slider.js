@@ -121,3 +121,23 @@ const cartSuggestionsSlider = new Swiper('#cartSuggestionsSlider', {
     //
     // }
 });
+
+const cardsButtonBlockSlider = new Swiper('#cardsButtonBlockSlider', {
+    speed: 300,
+    spaceBetween: 5,
+    slidesPerView: 1.3,
+    centeredSlides: true,
+    navigation: {
+        nextEl: '#cardsButtonBlockSlider .swiper-button-next',
+        prevEl: '#cardsButtonBlockSlider .swiper-button-prev',
+    },
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 767px
+        767: {
+            centeredSlides: false,
+            slidesPerView: 2,
+        },
+
+    }
+});
