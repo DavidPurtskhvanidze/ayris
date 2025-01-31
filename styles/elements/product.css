@@ -1,13 +1,32 @@
 .product-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    position: relative;
+}
+.product-section .bread-crumbs__back {
+    position: absolute;
+    top: calc(var(--header-height) + 20px);
+    left: 10px;
+    z-index: 2;
 }
 
 .product-pictures-wrapper {
     width: 100%;
 }
+.product-pictures-wrapper .swiper-button-prev,
+.product-pictures-wrapper .swiper-button-next,
+.product-pictures-wrapper .swiper-pagination {
+    display: none;
+}
 .product-pictures-wrapper a[data-fancybox] {
     cursor: url("/images/icons/zoom-lens.svg"), pointer;
+}
+.product-picture-full-img-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 .product-picture__img {
     width: 100%;
@@ -16,12 +35,12 @@
 .product-info {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: clamp(18px, calc(30/var(--clamp-width)*100vw), 30px);
     position: sticky;
     top: calc(var(--header-height) + 32px);
     align-self: start;
     width: 400px;
-    margin-inline-start: 14%;
+    margin-left: 14%;
     margin-bottom: 60px;
     height: calc(100vh - (var(--header-height) + 32px));
     overflow: auto;
@@ -39,7 +58,7 @@
     background-color: #95928E;
 }
 .product-title {
-    font-size: 38px;
+    font-size: clamp(21px, calc(38/var(--clamp-width)*100vw), 38px);
     line-height: 1.2;
     letter-spacing: 0.01em;
     font-weight: 400;
@@ -51,7 +70,7 @@
     gap: 32px;
 }
 .product-price {
-    font-size: 25px;
+    font-size: clamp(17px, calc(25/var(--clamp-width)*100vw), 25px);
     line-height: 1;
     display: flex;
     align-items: center;
@@ -73,12 +92,9 @@
     margin: auto;
 }
 
-.product-color-wrapper {
-
-}
 .product-color-title {
     font-style: italic;
-    font-size: 12px;
+    font-size: clamp(11px, calc(12/var(--clamp-width)*100vw), 12px);
     line-height: 1.2;
     letter-spacing: 0.05em;
     color: var(--color-dark-3);
@@ -87,12 +103,13 @@
 .product-color {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 18px;
 }
 
 .product-size-wrapper {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     gap: 16px;
 }
@@ -103,7 +120,6 @@
     flex: 1;
 }
 .product-size-guide-button {
-    height: 52px;
     font-size: 10px;
     line-height: 1;
     text-decoration-line: underline;
@@ -113,6 +129,7 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    margin-top: 10px;
 }
 .product-button-wrapper {
     display: flex;

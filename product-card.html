@@ -294,45 +294,47 @@
 
 <main class="main">
   <section class="product-section">
-    <div class="product-pictures-wrapper swiper">
+    <a href="/" class="bread-crumbs__back bread-crumbs__back_mobile">
+      Назад...
+    </a>
+    <div id="productPictures" class="product-pictures-wrapper swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <a href="images/product/product1@2x.jpg" data-fancybox="gallery">
-            <picture class="product-picture">
-              <source srcset="images/product/product1.webp" type="image/webp">
-              <source srcset="images/product/product1.jpg" type="image/jpeg">
-              <img class="product-picture__img" src="images/product/product1.jpg" alt="Шелковое платье Rococo">
-            </picture>
-          </a>
+          <a class="product-picture-full-img-link" href="images/product/product1@2x.jpg" data-fancybox="gallery"></a>
+          <picture class="product-picture">
+            <source srcset="images/product/product1.webp" type="image/webp">
+            <source srcset="images/product/product1.jpg" type="image/jpeg">
+            <img class="product-picture__img" src="images/product/product1.jpg" alt="Шелковое платье Rococo">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <a href="images/product/product2@2x.jpg" data-fancybox="gallery">
-            <picture class="product-picture">
-              <source srcset="images/product/product2.webp" type="image/webp">
-              <source srcset="images/product/product2.jpg" type="image/jpeg">
-              <img class="product-picture__img" src="images/product/product2.jpg" alt="Шелковое платье Rococo">
-            </picture>
-          </a>
+          <a class="product-picture-full-img-link" href="images/product/product2@2x.jpg" data-fancybox="gallery"></a>
+          <picture class="product-picture">
+            <source srcset="images/product/product2.webp" type="image/webp">
+            <source srcset="images/product/product2.jpg" type="image/jpeg">
+            <img class="product-picture__img" src="images/product/product2.jpg" alt="Шелковое платье Rococo">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <a href="images/product/product3@2x.jpg" data-fancybox="gallery">
-            <picture class="product-picture">
-              <source srcset="images/product/product3.webp" type="image/webp">
-              <source srcset="images/product/product3.jpg" type="image/jpeg">
-              <img class="product-picture__img" src="images/product/product3.jpg" alt="Шелковое платье Rococo">
-            </picture>
-          </a>
+          <a class="product-picture-full-img-link" href="images/product/product3@2x.jpg" data-fancybox="gallery"></a>
+          <picture class="product-picture">
+            <source srcset="images/product/product3.webp" type="image/webp">
+            <source srcset="images/product/product3.jpg" type="image/jpeg">
+            <img class="product-picture__img" src="images/product/product3.jpg" alt="Шелковое платье Rococo">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <a href="images/product/product4@2x.jpg" data-fancybox="gallery">
-            <picture class="product-picture">
-              <source srcset="images/product/product4.webp" type="image/webp">
-              <source srcset="images/product/product4.jpg" type="image/jpeg">
-              <img class="product-picture__img" src="images/product/product4.jpg" alt="Шелковое платье Rococo">
-            </picture>
-          </a>
+          <a class="product-picture-full-img-link" href="images/product/product4@2x.jpg" data-fancybox="gallery"></a>
+          <picture class="product-picture">
+            <source srcset="images/product/product4.webp" type="image/webp">
+            <source srcset="images/product/product4.jpg" type="image/jpeg">
+            <img class="product-picture__img" src="images/product/product4.jpg" alt="Шелковое платье Rococo">
+          </picture>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <div class="product-info">
 
@@ -429,8 +431,8 @@
         <button class="button" type="submit">
           <i>Заказать монограмму</i>
         </button>
-        <button class="button button_gray uppercase" type="submit">
-          Добавить в корзину
+        <button class="button button_gray" type="submit">
+          <span class="uppercase">Добавить в корзину</span>
         </button>
       </div>
 
@@ -1054,7 +1056,6 @@
 <script>
   Fancybox.bind("[data-fancybox]", {
     Images: {
-      initialSize: "full",
       Panzoom: false,
     },
     Thumbs: false,

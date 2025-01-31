@@ -141,3 +141,18 @@ const cardsButtonBlockSlider = new Swiper('#cardsButtonBlockSlider', {
 
     }
 });
+
+
+const productPictures = new Swiper('#productPictures', {
+    speed: 300,
+    spaceBetween: 2,
+    slidesPerView: 1,
+    centeredSlides: true,
+    navigation: {
+        nextEl: '#productPictures .swiper-button-next',
+        prevEl: '#productPictures .swiper-button-prev',
+    },
+    pagination: {
+        el: '#productPictures .swiper-pagination',
+    },
+});

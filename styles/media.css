@@ -226,6 +226,14 @@
     }
     /*Catalog toolbar*/
 
+    /*Product card*/
+    .product-info {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 16px;
+    }
+    /*Product card*/
+
     /*Footer*/
     .footer-main__section {
         width: calc(100% / 3);
@@ -274,6 +282,50 @@
         padding-block: 87px;
     }
     /*Banners*/
+
+    /*Product card*/
+    .product-picture-full-img-link {
+        top: auto;
+        right: 10px;
+        bottom: 10%;
+        left: auto;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product-picture-full-img-link:before {
+        content: '';
+        display: block;
+        background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8.74992' cy='8.74992' r='8.24992' stroke='%2395928E'/%3E%3Cpath d='M14.4995 14.5L23.9994 23.9999' stroke='%2395928E'/%3E%3Cpath d='M8.74951 5.00049V12.5004' stroke='%2395928E'/%3E%3Cpath d='M12.4995 8.75049L4.99958 8.75049' stroke='%2395928E'/%3E%3C/svg%3E%0A");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+    }
+    .product-pictures-wrapper .swiper-button-prev,
+    .product-pictures-wrapper .swiper-button-next {
+        display: flex;
+    }
+    .product-pictures-wrapper .swiper-pagination {
+        display: block;
+    }
+    .product-section {
+        grid-template-columns: 1fr;
+        padding-top: var(--header-height);
+    }
+    .product-info {
+        height: auto;
+        padding: 10px;
+    }
+    .product-pictures-wrapper {
+        --swiper-pagination-bottom: 18px;
+        --swiper-pagination-color: var(--color-gray-1);
+    }
+    /*Product card*/
 
 
     /*Footer*/
@@ -367,6 +419,14 @@
         width: calc(100% - 20px);
     }
     /*Catalog toolbar*/
+
+    .product-info {
+        height: auto;
+        padding: 20px 10px 0;
+    }
+    .product-info .bread-crumbs {
+        display: none;
+    }
 
     /*Cart preorder*/
     .cart-sidebar {
