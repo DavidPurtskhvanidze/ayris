@@ -108,6 +108,19 @@
     color: var(--color-dark-3);
     margin-bottom: 36px;
 }
+.cart-sidebar-control__link-wrapper {
+    text-align: center;
+    height: 52px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+.cart-sidebar-control__link {
+    font-size: 11px;
+    text-decoration-line: underline;
+    color: var(--color-dark-3);
+}
 .cart-sidebar-suggestions_slider {
     padding: 0 22px;
     position: relative;
