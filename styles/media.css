@@ -251,6 +251,7 @@
         --page-banner-padding-inline: clamp(10px, calc(50/var(--clamp-width)*100vw), 50px);
         --footer-padding: 10px;
         --gap: 2px;
+        --modal-padding: 60px
     }
 
     .main-page-top-banner {
@@ -354,6 +355,15 @@
     }
     /*Basket*/
 
+    /*Basket order*/
+    .basket-order-content {
+        grid-template-columns: 1fr;
+    }
+    .basket-info-list__item {
+        padding-inline: 12px;
+    }
+    /*Basket order*/
+
 
     /*Footer*/
     .footer {
@@ -369,6 +379,7 @@
 @media (max-width: 480px) {
     :root {
         --header-paddin-inline: 10px;
+        --modal-padding: 32px
     }
 
     /*Header*/
@@ -376,6 +387,10 @@
         gap: 4px;
     }
     /*Header*/
+
+    /*Modal*/
+
+    /*Modal*/
 
     /*Bread crumbs*/
     .bread-crumbs__back_mobile {
