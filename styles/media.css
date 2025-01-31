@@ -392,6 +392,12 @@
 
     /*Modal*/
 
+    /**/
+    .added-toaster {
+        width: auto;
+        left: 10px;
+    }
+
     /*Bread crumbs*/
     .bread-crumbs__back_mobile {
         display: flex;

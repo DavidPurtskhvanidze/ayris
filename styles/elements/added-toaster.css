@@ -6,12 +6,12 @@
     position: fixed;
     bottom: -100px;
     right: 10px;
-    left: 10px;
     z-index: 15;
     display: flex;
     gap: 30px;
     transition: bottom 0.5s ease, opacity 0.5s ease;
     opacity: 0;
+    width: 400px;
 }
 .added-toaster.active {
     bottom: 60px;
@@ -43,6 +43,7 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     color: var(--color-gray-1);
+    margin-bottom: 12px;
 }
 .added-toaster__link {
     position: absolute;
