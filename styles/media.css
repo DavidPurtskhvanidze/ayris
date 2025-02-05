@@ -9,7 +9,7 @@
     }
 }
 
-/*Tablet*/
+/*Tablet MD*/
 @media (max-width: 1023px) {
     :root {
         --header-height: 50px;
@@ -244,7 +244,7 @@
     /*Footer*/
 }
 
-/*Mobile*/
+/*Mobile SM*/
 @media (max-width: 767px) {
     :root {
         --page-banner-padding-block: clamp(20px, calc(50/var(--clamp-width)*100vw), 50px);
@@ -274,7 +274,10 @@
         gap: 4px;
     }
     .banner-with-text-wrapper {
-        padding-block: 87px;
+        padding-block: 60px;
+    }
+    .banner-with-text-button {
+        --button-height: 48px;
     }
     /*Banners*/
 
@@ -375,7 +378,7 @@
     /*Footer*/
 }
 
-/*Mobile S*/
+/*Mobile XS*/
 @media (max-width: 480px) {
     :root {
         --header-paddin-inline: 10px;
@@ -387,10 +390,6 @@
         gap: 4px;
     }
     /*Header*/
-
-    /*Modal*/
-
-    /*Modal*/
 
     /**/
     .added-toaster {

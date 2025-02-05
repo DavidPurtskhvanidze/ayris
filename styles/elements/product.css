@@ -177,9 +177,11 @@
     margin-inline-end: 40px;
     margin-block-end: 22px;
     padding: 8px;
+    display: none;
 }
 .product-popup__box.open {
     opacity: 1;
+    display: block;
     transform: translateY(0);
     visibility: visible;
 }

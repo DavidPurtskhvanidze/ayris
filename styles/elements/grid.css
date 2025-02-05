@@ -25,7 +25,7 @@
     align-items: start;
 }
 
-/*Tablet*/
+/*Tablet MD*/
 @media (max-width: 1023px) {
     .grid-col-md-1 {
         display: grid;
@@ -49,7 +49,7 @@
     }
 }
 
-/*Mobile*/
+/*Mobile SM*/
 @media (max-width: 767px) {
     .grid-col-sm-1 {
         display: grid;
@@ -73,7 +73,7 @@
     }
 }
 
-/*Mobile S*/
+/*Mobile XS*/
 @media (max-width: 480px) {
     .grid-col-xs-1 {
         display: grid;

@@ -1,7 +1,6 @@
 @import url('variables.css');
 @import url('normalize.css');
 @import url('fonts.css');
-@import url('utils.css');
 @import url('globals.css');
 
 @import url('elements/modal.css');
@@ -30,6 +29,13 @@
 @import url('elements/banners.css');
 @import url('elements/error.css');
 
+/*custom style*/
+@import url('elements/section-with-picture.css');
+@import url('elements/custom-pictures-grid.css');
+@import url('elements/picture-logo.css');
+@import url('elements/picture-big-icon.css');
+
+@import url('utils.css');
 @import url('media.css');
 
 
