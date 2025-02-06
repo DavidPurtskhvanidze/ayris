@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     popups.forEach(popup => {
         const button = popup.querySelector('.fn-popup-button');
         const box = popup.querySelector('.fn-popup-box');
-
         // Open/close list by clicking on button
         button.addEventListener('click', () => {
             const isOpen = popup.classList.contains('open');
@@ -13,10 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isOpen) {
                 popup.classList.add('open');
                 box.classList.add('open');
-                //box.style.display = 'flex';
+
+                // if you want the bottom content to be shown first
+                // box.scrollTo( {top: box.scrollHeight});
             }
         });
-
     });
 
     // Close all lists when clicking outside the zone
@@ -28,8 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to close all popups
     function closeAllPopups() {
-        document.querySelectorAll('.fn-popup').forEach(popup => {
-            popup.classList.remove('open');
+        popups.forEach(popup => {
             popup.classList.remove('open');
             popup.querySelector('.fn-popup-box').classList.remove('open');
         });

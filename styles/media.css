@@ -509,6 +509,8 @@
     .product-popup {
         bottom: 14px;
         right: 14px;
+        height: 22px;
+        width: 22px;
     }
     .product-popup__button {
         height: 22px;
@@ -520,8 +522,9 @@
     }
     .product-popup__box {
         width: 184px;
-        margin-inline-end: 0;
-        margin-block-end: 14px;
+        max-height: 240px;
+        bottom: 30px;
+        right: 24px;
     }
     .product-popup__picture {
         width: 50px;
