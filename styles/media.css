@@ -367,6 +367,13 @@
     }
     /*Basket order*/
 
+    /*FAQ*/
+    .faq {
+        --page-container-width: 100%;
+        padding: 0 20px;
+    }
+    /*FAQ*/
+
 
     /*Footer*/
     .footer {
@@ -601,5 +608,12 @@
         font-size: 12px;
     }
     /*Forms*/
+
+    /*FAQ*/
+    .faq {
+        --page-container-width: 100%;
+        padding: 0 10px;
+    }
+    /*FAQ*/
 
 }

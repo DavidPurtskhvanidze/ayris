@@ -28,6 +28,7 @@
 @import url('elements/text-section.css');
 @import url('elements/banners.css');
 @import url('elements/error.css');
+@import url('elements/faq.css');
 
 /*custom style*/
 @import url('elements/section-with-picture.css');
