@@ -21,6 +21,20 @@
 .inspired-by-banner__picture {
     width: 100%;
     height: 100%;
+    position: relative;
+}
+.inspired-by-banner_hover .inspired-by-banner__picture:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.0);
+    transition: background-color 0.3s ease;
+}
+.inspired-by-banner_hover:hover .inspired-by-banner__picture:before {
+    background-color: rgba(0,0,0, 0.1);
 }
 .inspired-by-banner__img {
     width: 100%;
