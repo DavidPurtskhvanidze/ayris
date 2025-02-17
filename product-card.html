@@ -396,7 +396,7 @@
                   xs
             </span>
           </label>
-          <label data-fancybox data-src="#fn2" class="checkbox checkbox_disabled" for="size2" title="Size S">
+          <label data-fancybox-xs-bottom-position data-src="#fn2" class="checkbox checkbox_disabled" for="size2" title="Size S">
             <input class="checkbox__input" disabled type="checkbox" id="size2" name="type" value="s" />
             <span class="checkbox__big-control">
                   s
@@ -422,7 +422,7 @@
           </label>
         </div>
 
-        <button data-fancybox data-src="#fn" class="product-size-guide-button">
+        <button data-fancybox-xs-bottom-position data-src="#fn-size-guide-modal" class="product-size-guide-button">
           Гид по размерам
         </button>
       </div>
@@ -1285,7 +1285,8 @@
   </a>
 </div>
 
-<div class="modal modal_padding text-center" id="fn2">
+<!--Modal-->
+<div class="modal modal_big-padding text-center" id="fn2">
   <div class="modal-title">
     Узнать о поступлении
   </div>
@@ -1310,25 +1311,126 @@
         <span class="uppercase">Подписаться</span>
       </button>
     </fieldset>
-    <p class="basket-summary__agreements">
-      Нажимая на кнопку, я принимаю условия <a title="Публичная оферта" href="">публичной оферты</a> и <a title="Политика конфиденциальности" href="">политики конфидециальности</a>.
+    <p class="modal-agreements">
+      <i>
+        Нажимая на кнопку «Подписаться» вы соглашаетесь <br>
+        с <a title="Публичная оферта" href="">политикой конфиденциальности</a>.
+      </i>
     </p>
   </form>
 </div>
 
-<div class="modal" id="fn" style="display:none; max-width:500px;">
-  <h2>Hello, world!</h2>
-  <p>
-    Try hitting the tab key and notice how the focus stays within the dialog
-    itself.
+<!--Modal-->
+<div class="modal text-center" id="fn-size-guide-modal">
+  <div class="modal-title">
+    Гид по размерам
+  </div>
+  <p class="modal-sub-title">
+    Комбинация
   </p>
-  <p>
-    To close dialog hit the esc button, click on the overlay or just click the
-    close button.
+  <div class="size-guide-table">
+    <table>
+      <thead>
+      <tr>
+        <th></th>
+        <th>Обхват груди, см</th>
+        <th>Обхват талии, см</th>
+        <th>Обхват бедер, см</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>xs</td>
+        <td>80</td>
+        <td>60</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>s</td>
+        <td>84</td>
+        <td>64</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>m</td>
+        <td>88</td>
+        <td>68</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <td>l</td>
+        <td>90</td>
+        <td>72</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>xl</td>
+        <td>100</td>
+        <td>80</td>
+        <td>120</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <button type="button" data-fancybox-xs-bottom-position data-src="#fn-size-measuring-modal" class="size-guide-button">
+      Инструкция по измерению изделия
+    </button>
+  </div>
+</div>
+
+<!--Modal-->
+<div class="modal text-center" id="fn-size-measuring-modal">
+  <button type="button" data-fancybox-xs-bottom-position data-src="#fn-size-guide-modal" class="modal-back-button">
+    Назад
+  </button>
+  <div class="modal-title">
+    Шорты
+  </div>
+  <p class="modal-sub-title">
+    Инструкция по измерению изделия
   </p>
-  <p>
-    Element used to launch the modal would receive focus back after closing.
-  </p>
+  <div class="size-measuring-table">
+    <table>
+      <thead>
+      <tr>
+        <th>Наименование измерения</th>
+        <th>Схема</th>
+        <th class="uppercase">s - m</th>
+        <th class="uppercase">l - xl</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Длина изделия по передней половинке от верха вдоль запаха до низа</td>
+        <td><img src="/images/pictures/size-measuring.jpg" alt="Схема"></td>
+        <td>32 см</td>
+        <td>32 см</td>
+      </tr>
+      <tr>
+        <td>Длина изделия по передней половинке от верха вдоль запаха до низа</td>
+        <td><img src="/images/pictures/size-measuring.jpg" alt="Схема"></td>
+        <td>32 см</td>
+        <td>32 см</td>
+      </tr>
+      <tr>
+        <td>Длина изделия по передней половинке от верха вдоль запаха до низа</td>
+        <td><img src="/images/pictures/size-measuring.jpg" alt="Схема"></td>
+        <td>32 см</td>
+        <td>32 см</td>
+      </tr>
+      <tr>
+        <td>Длина изделия по передней половинке от верха вдоль запаха до низа</td>
+        <td><img src="/images/pictures/size-measuring.jpg" alt="Схема"></td>
+        <td>32 см</td>
+        <td>32 см</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <button type="button" data-fancybox-xs-bottom-position data-src="#fn-size-guide-modal" class="size-measuring-button">
+      Гид по размерам
+    </button>
+  </div>
 </div>
 
 <script src="js/libs/fancybox-5.0.min.js"></script>
@@ -1345,6 +1447,15 @@
     Thumbs: false,
     Toolbar: false,
   });
+
+
+  // Added custom class 'modal_xs-bottom-position' for modal window positioning
+  Fancybox.bind("[data-fancybox-xs-bottom-position]", {
+    dragToClose: false,
+    closeExisting: true,
+    mainClass: 'modal_xs-bottom-position'
+  });
+
 
   function toggleClass() {
     const box = document.getElementById("addedToaster");

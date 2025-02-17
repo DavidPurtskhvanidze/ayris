@@ -29,7 +29,7 @@
     margin-bottom: clamp(10px, calc(40/var(--clamp-width)*100vw), 40px);
 }
 .gap-big {
-    gap: clamp(7px, calc(24/var(--clamp-width)*100vw), 24px);;
+    gap: clamp(7px, calc(24/var(--clamp-width)*100vw), 24px);
 }
 
 .page-overlay {

@@ -251,7 +251,7 @@
         --page-banner-padding-inline: clamp(10px, calc(50/var(--clamp-width)*100vw), 50px);
         --footer-padding: 10px;
         --gap: 2px;
-        --modal-padding: 60px
+        --modal-padding: 10px
     }
 
     .main-page-top-banner {
@@ -389,7 +389,6 @@
 @media (max-width: 480px) {
     :root {
         --header-paddin-inline: 10px;
-        --modal-padding: 32px
     }
 
     /*Header*/
