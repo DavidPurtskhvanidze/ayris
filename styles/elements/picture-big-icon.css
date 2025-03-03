@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    height: var(--baner-height);
 }
 .picture-big-icon__icon-wrapper {
     position: absolute;

@@ -4,7 +4,6 @@
 .card {
     display: flex;
     flex-direction: column;
-    /*min-height: 600px;*/
     background-color: var(--color-main-bg);
 }
 .card-top {
@@ -96,12 +95,18 @@
     border: 0.7px solid rgba(0, 0, 0, 0.4);
 }
 
+/*Card button block*/
 .cards-button-block {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .cards-button-block .swiper {
     width: 100%;
+    flex: 1;
+}
+.cards-button-block .card {
+    height: 100%;
 }
 
 /*use this wrapper 'cards-block' if there is no slider*/
@@ -112,7 +117,18 @@
 }
 .cards-button-block .card-top {
     position: relative;
-    aspect-ratio: 1 / 2.4;
+    aspect-ratio: unset;
+    height: 100%;
+}
+.cards-button-block .card-bottom {
+    height: 124px;
+}
+.cards-button-block .card-bottom .card-title,
+.cards-button-block .card-bottom .card-descriptor,
+.cards-button-block .card-bottom .card-price {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .button-block {
     padding-top: 64px;
@@ -121,3 +137,4 @@
 .button-block .button {
     max-width: 312px;
 }
+/*Card button block*/
