@@ -172,7 +172,11 @@ const cardsButtonBlockSlider = new Swiper('#cardsButtonBlockSlider', {
             centeredSlides: false,
             slidesPerView: 2,
         },
-
+        // when window width is >= 1023px
+        1440: {
+            centeredSlides: false,
+            slidesPerView: 2.6,
+        },
     }
 });
 
