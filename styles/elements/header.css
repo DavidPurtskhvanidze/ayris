@@ -20,6 +20,9 @@
     color: var(--color-light-1);
     background-color: transparent;
 }
+.header svg *[stroke] {
+    stroke: var(--color-dark-2);
+}
 .header_transparent svg *[stroke] {
     stroke: var(--color-light-1);
 }
