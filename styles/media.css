@@ -1,19 +1,4 @@
-/*Desktop XXL*/
-@media (min-width: 1921px)  {
-    /*Banners*/
-    .banner {
-        height: 100%;
-    }
-    .banner-with-links {
-        height: 100%;
-    }
-    .picture-big-icon {
-        height: 100%;
-    }
-    /*Banners*/
-}
-
-/*Desktop LG*/
+/*Desktop*/
 @media (max-width: 1280px)  {
     .page-container {
         --page-container-width: 100%;
@@ -178,15 +163,6 @@
     /*Club form modal*/
 
     /*Banners*/
-    .banner {
-        height: auto;
-    }
-    .banner-with-links {
-        height: auto;
-    }
-    .picture-big-icon {
-        height: auto;
-    }
     .grid-col-3 .banner-title {
         --page-banner-padding-block: 40px;
         --page-banner-padding-inline: 40px;
@@ -284,9 +260,6 @@
 
     .card-grid__big-banner {
         grid-area: 2 / 1 / 3 / 3;
-    }
-    .cards-button-block {
-        padding-top: 24px;
     }
 
     /*Banners*/
@@ -502,7 +475,11 @@
 
     .product-info {
         height: auto;
-        padding: 20px 10px 0;
+        padding: 0 10px 0;
+    }
+    .product-info-body {
+        margin-top: 0;
+        width: 100%;
     }
     .product-info .bread-crumbs {
         display: none;
