@@ -254,8 +254,7 @@ fieldset {
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.input-field:focus + .input-label,
-.input-field:not(:placeholder-shown) + .input-label {
+.input-field:focus + .input-label {
     top: 0;
     transform: translateY(100%);
     font-size: 11px;
