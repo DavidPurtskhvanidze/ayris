@@ -300,6 +300,7 @@
     .product-info-wrapper {
         margin-left: 0;
         margin-right: 0;
+        overflow: hidden;
     }
     /*Product card*/
 
