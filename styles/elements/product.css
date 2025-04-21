@@ -18,6 +18,35 @@
 .product-pictures-wrapper .swiper-pagination {
     display: none;
 }
+.product-pictures-pagination {
+    position: fixed;
+    bottom: 20vh;
+    right: calc(50% + 20px);
+    /*transform: translateY(-50%);*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+    padding: 20px;
+}
+.product-pictures-pagination.absolute {
+    position: absolute;
+    top: auto;
+    bottom: 20vh;
+    right: 20px;
+    left: auto;
+}
+.product-pictures-pagination .dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-royal-paper);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.product-pictures-pagination .dot.active {
+    background-color: var(--color-gray-1);
+}
 .product-pictures-wrapper a[data-fancybox] {
     cursor: url("/images/icons/zoom-lens.svg"), pointer;
 }
@@ -31,21 +60,26 @@
 .product-picture__img {
     width: 100%;
 }
-
+.product-info-wrapper {
+    margin-left: 16%;
+    margin-right: 16px;
+}
 .product-info {
+    padding-top: calc(var(--header-height) + 30px);
     display: flex;
     flex-direction: column;
     gap: clamp(18px, calc(30/var(--clamp-width)*100vw), 30px);
-    position: sticky;
-    top: calc(var(--header-height) + 32px);
     align-self: start;
+    overflow: hidden;
+    position: relative;
+    will-change: min-height;
+}
+.product-info-body {
     width: 400px;
-    margin-left: 14%;
-    margin-bottom: 60px;
-    height: calc(100vh - (var(--header-height) + 32px));
-    overflow: auto;
-    padding-inline-end: 4px;
-    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(18px, calc(30/var(--clamp-width)*100vw), 30px);
+    margin-bottom: 32px;
 }
 .product-info::-webkit-scrollbar-track {
     background-color: #D9D9D9;
@@ -281,7 +315,7 @@
 /*Product popup*/
 
 /*Swiper slider desktop disabled*/
-@media (min-width: 767px) {
+@media (min-width: 1023px) {
     .product-pictures-wrapper .swiper-wrapper {
         display: block;
     }
