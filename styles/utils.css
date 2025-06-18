@@ -52,6 +52,9 @@
 .display-flex {
     display: flex;
 }
+.flex-dir-column {
+    flex-direction: column;
+}
 .display-grid {
     display: grid;
 }
@@ -63,6 +66,9 @@
 }
 .order-2 {
     order: 2;
+}
+.align-items-center {
+    align-items: center;
 }
 .justify-content-center {
     justify-content: center;
