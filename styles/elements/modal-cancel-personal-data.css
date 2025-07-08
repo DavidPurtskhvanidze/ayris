@@ -15,6 +15,7 @@
 }
 .modal-cancel-data .checkbox__label {
     font-size: clamp(13px, calc(14/var(--clamp-width)*100vw), 14px);
+    line-height: 1.38;
 }
 .modal-cancel-data .checkbox__control {
     margin-inline-end: clamp(10px, calc(15/var(--clamp-width)*100vw), 15px);
@@ -62,5 +63,10 @@
 @media (max-width: 767px) {
     .modal-cancel-data-desc br {
         display: none;
+    }
+}
+@media (max-width: 480px) {
+    .modal-cancel-data .checkbox__control {
+        --checkbox-width: 18px;
     }
 }
