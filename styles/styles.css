@@ -30,6 +30,7 @@
 @import url('elements/banners.css');
 @import url('elements/error.css');
 @import url('elements/faq.css');
+@import url('elements/modal-cancel-personal-data.css');
 
 /*custom style*/
 @import url('elements/section-with-picture.css');

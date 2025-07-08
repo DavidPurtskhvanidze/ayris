@@ -1,0 +1,66 @@
+/*modal-cancel-data*/
+.modal-cancel-data {
+    --clamp-width: 1920;
+    --gap: clamp(10px, calc(15/var(--clamp-width)*100vw), 15px);
+    padding: clamp(40px, calc(70/var(--clamp-width)*100vw), 70px) clamp(25px, calc(80/var(--clamp-width)*100vw), 80px);
+    max-width: 967px;
+    width: 100%;
+}
+.modal-cancel-data .fieldset {
+    gap: var(--gap);
+    margin: 0 auto 20px auto;
+}
+.modal-cancel-data .checkbox {
+    align-items: flex-start;
+}
+.modal-cancel-data .checkbox__label {
+    font-size: clamp(13px, calc(14/var(--clamp-width)*100vw), 14px);
+}
+.modal-cancel-data .checkbox__control {
+    margin-inline-end: clamp(10px, calc(15/var(--clamp-width)*100vw), 15px);
+}
+.modal-cancel-data-title {
+    font-weight: 400;
+    font-size: clamp(22px, calc(28/var(--clamp-width)*100vw), 28px);
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: var(--color-dark-3);
+    margin-bottom: 20px;
+}
+.modal-cancel-data .button {
+    font-family: 'RoundhandWeb', serif;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    height: 53px;
+    line-height: 1.27;
+    font-weight: 600;
+    color: var(--color-light-1);
+    margin: auto;
+    max-width: 396px;
+}
+.modal-cancel-data-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.modal-cancel-data-desc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: var(--color-dark-3);
+}
+/*modal-cancel-data*/
+
+@media (max-width: 1280px) {
+    .modal-cancel-data {
+        width: auto;
+    }
+}
+@media (max-width: 767px) {
+    .modal-cancel-data-desc br {
+        display: none;
+    }
+}
