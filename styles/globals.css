@@ -71,3 +71,61 @@ p:where(:not([class])) {
     display: block;
 }
 /*Fancy*/
+
+
+/*Running Line*/
+.running-line {
+    overflow: hidden;
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-accent);
+    height: var(--running-line-height);
+}
+.running-line-wrapper {
+    display: flex;
+    height: 100%;
+}
+.running-line__item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: runningLine;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: var(--color-accent);
+    font-size: clamp(14px, calc(18 / var(--clamp-width) * 100vw), 18px);
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: var(--color-light-1);
+}
+.running-line__item a {
+    margin: 0 10px;
+}
+.running-line__item a:hover {
+    text-decoration: none;
+}
+.running-line ~ .header {
+    top: var(--running-line-height);
+}
+.running-line ~ .main {
+    padding-top: var(--running-line-height);
+}
+.running-line ~ .main.main-top-padding {
+    padding-top: calc(var(--running-line-height) + var(--header-height));
+}
+@keyframes runningLine {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/*Running Line*/
+
+

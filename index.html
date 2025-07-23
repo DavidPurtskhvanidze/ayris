@@ -11,6 +11,47 @@
   <title>Index</title>
 </head>
 <body>
+
+  <div class="running-line" id="fnRunningLine">
+    <div class="running-line-wrapper">
+      <div class="running-line__item">
+        <a href="">SUMMER SALE! Скидка 20% по промокоду summer20 на товары раздела SALE</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const wrapper = document.querySelector('.running-line-wrapper');
+      const item = wrapper.querySelector('.running-line__item');
+
+      if (!item) return;
+      const containerWidth = wrapper.offsetWidth;
+      let children = Array.from(item.children);
+      function getTotalChildrenWidth() {
+        return children.reduce((sum, child) => sum + child.offsetWidth, 0);
+      }
+      let totalWidth = getTotalChildrenWidth();
+
+      while (totalWidth < containerWidth) {
+        children.forEach(child => {
+          const clone = child.cloneNode(true);
+          item.appendChild(clone);
+          children.push(clone);
+        });
+        totalWidth = getTotalChildrenWidth();
+      }
+
+      const cloneItem = item.cloneNode(true);
+      wrapper.appendChild(cloneItem);
+
+      const duration = children.length * 6000;
+      item.style.animationDuration = `${duration}ms`;
+      cloneItem.style.animationDuration = `${duration}ms`;
+    });
+  </script>
+
+
   <header class="header header_transparent" id="headerMain">
     <!--  Header burger menu  -->
     <button class="header-burger-button" id="hamburgerButton" type="button">
@@ -1664,15 +1705,15 @@
   <script src="js/modules/slider.js"></script>
   <script src="js/modules/sidebar.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      setTimeout(function () {
-        Fancybox.show([{ src: "#clubFormModal", type: "inline" }], {
-          closeButton: false,
-          hideScrollbar: false,
-        });
-      }, 1000);
-    });
-  </script>
+<!--  <script>-->
+<!--    document.addEventListener("DOMContentLoaded", function () {-->
+<!--      setTimeout(function () {-->
+<!--        Fancybox.show([{ src: "#clubFormModal", type: "inline" }], {-->
+<!--          closeButton: false,-->
+<!--          hideScrollbar: false,-->
+<!--        });-->
+<!--      }, 1000);-->
+<!--    });-->
+<!--  </script>-->
 </body>
 </html>
