@@ -118,6 +118,9 @@ p:where(:not([class])) {
 .running-line ~ .main.main-top-padding {
     padding-top: calc(var(--running-line-height) + var(--header-height));
 }
+.running-line ~ main .catalog-toolbar_sticky-top {
+    top: calc((var(--running-line-height) + var(--header-height)) - 1px);
+}
 @keyframes runningLine {
     from {
         transform: translateX(0);
